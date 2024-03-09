@@ -91,3 +91,22 @@
     font-family: "Montserrat", sans-serif;
   font-style: normal;
 }
+.nextButton {
+        width: 25.3%;
+        height: 12.4vw;
+        margin-top: 7vw;
+        margin-right: -0.7vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(21, 105, 99);
+        border: none;
+}
+
+.previousButton {
+    width: 25.3%;
+    height: 12.4vw;
+    margin-top: 7vw;
+    border: none;
+    background-color: white;
+}
