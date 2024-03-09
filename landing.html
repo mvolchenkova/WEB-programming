@@ -4,101 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kembang Flower Mantap</title>
-    <style>
-      .container {
-    display: flex;
-    align-items: center;
-    margin-top: 40px;
-    margin-right: 47px;
-    justify-content: flex-end;
-  }
-
-      .searchNcart {
-        width: 45px;
-        height: 35px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: -5px;
-        margin-left: 15px;
-      }
-
-      .signUp {
-        width: 110px;
-        height: 35px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: rgb(21, 105, 99);
-        font-size: 13px;
-        font-family: Arial, sans-serif;
-        font-weight: bold;
-    }
-      
-      .signIn {
-        width: 110px;
-        height: 35px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(21, 105, 99);
-        position: relative;
-      }
-
-      .signIn-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 13px;
-        font-family: Arial, sans-serif;
-        font-weight: bold;
-      }
-      .hexagon {
-        margin-left: 50px;
-        width: 30px;
-        height: 17px;
-        background-color: rgb(21, 105, 99);
-        position: relative;
-      }
-
-      .hexagon:before,
-      .hexagon:after {
-        content: "";
-        position: absolute;
-        width: 0;
-        border-left: 15px solid transparent;
-        border-right: 15px solid transparent;
-      }
-
-      .hexagon:before {
-        bottom: 100%;
-        border-bottom: 8px solid rgb(21, 105, 99);
-      }
-
-      .hexagon:after {
-        top: 100%;
-        width: 0;
-        border-top: 8px solid rgb(21, 105, 99);
-      }
-
-      .hexagon-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 10px;
-        font-family: Arial, sans-serif;
-        font-weight: bold;
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
     <header> 
-      <div class="container">
-        <img src="plantWithHands.png" alt="" style="position: absolute; width:600px; height:652px;top: 0; left: 0;  z-index: -1;">
+      <div class="container fontstyles">
+        
         <div class="hexagon" style="margin-right: auto; position: relative;">
           <span class="hexagon-content" style="font: size 11px;">P</span>
         </div>
@@ -116,7 +27,28 @@
         </div>
         <div></div>
       </div>
+      <div class="fontstyles" style="display: flex; align-items: center; justify-content: center;">
+        <div style="flex: 1;">
+            <img src="plantWithHands.png" alt="" style="position: absolute; width: 47.5%; height: auto;top: 0; left: 0;  z-index: -1;">
+        </div>
+        <div style="flex: 1;">
+            <p style=
+            "color: rgb(21, 105, 99);
+            margin-left: 7.1%;
+            font-weight: 500;
+            font-size: 5.25vw;
+            margin-top: 17.3%">Kembang Flower Mantap</p>
+            <p style="font-size: 1.37vw; font-weight: 400; margin-left: 7.2%;
+             margin-right: 15%; line-height: 1.82; margin-top: -7%;">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+
+        </div>
+     </div>
     </header>
-    <footer></footer>
+    <body>
   </body>
+  <footer>
+
+  </footer>
 </html>
