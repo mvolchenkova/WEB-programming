@@ -1,10 +1,121 @@
 <!DOCTYPE html>
-<head>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kembang Flower Mantap</title>
+    <style>
+      .container {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-right: 47px;
+    justify-content: flex-end;
+  }
 
-</head>
-<body>
-    
-</body>
-<footer>
-    
-</footer>
+      .searchNcart {
+        width: 45px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: -5px;
+        margin-left: 17px;
+      }
+
+      .signUp {
+        width: 110px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(21, 105, 99);
+        font-size: 13px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+    }
+      
+      .signIn {
+        width: 110px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(21, 105, 99);
+        position: relative;
+      }
+
+      .signIn-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 13px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+      }
+      .hexagon {
+        margin-left: 50px;
+        width: 30px;
+        height: 17px;
+        background-color: rgb(21, 105, 99);
+        position: relative;
+      }
+
+      .hexagon:before,
+      .hexagon:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+      }
+
+      .hexagon:before {
+        bottom: 100%;
+        border-bottom: 8px solid rgb(21, 105, 99);
+      }
+
+      .hexagon:after {
+        top: 100%;
+        width: 0;
+        border-top: 8px solid rgb(21, 105, 99);
+      }
+
+      .hexagon-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 10px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header> 
+      <div class="container">
+        <div class="hexagon" style="margin-right: auto;">
+          <span class="hexagon-content" style="font: size 11px;px">P</span>
+        </div>
+        <div class="searchNcart">
+            <img src="search.png" style="height: 18px; width: 18px;"alt="">
+        </div>
+        <div class="searchNcart">
+            <img src="cart.png" style="height: 18px; width: 18px;" alt="">
+        </div>
+        <div class="signUp">
+            <p style="color: rgb(21, 105, 99); font-family: Arial, sans-serif;font-weight: bold;font-size: 13px;">Sign Up</p>
+        </div>
+        <div class="signIn">
+            <span class="signIn-content">Sign In</span>
+        </div>
+        <div></div>
+      </div>
+    </header>
+    <footer></footer>
+  </body>
+</html>
