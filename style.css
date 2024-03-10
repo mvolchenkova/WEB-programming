@@ -1,8 +1,8 @@
 .container {
     display: flex;
     align-items: center;
-    margin-top: 40px;
-    margin-right: 47px;
+    margin-top: 3vw;
+    margin-right: 3.75vw;
     justify-content: flex-end;
     flex-wrap: wrap;
   }
@@ -30,13 +30,14 @@
     }
       
       .signIn {
-        width: 110px;
-        height: 35px;
+        width: 8.9%;
+        height: 2.7vw;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: rgb(21, 105, 99);
         position: relative;
+        margin-right: 0.71vw;
       }
 
       .signIn-content {
@@ -45,54 +46,17 @@
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        font-size: 13px;
+        font-size: 1vw;
         font-family: Arial, sans-serif;
         font-weight: bold;
       }
-      .hexagon {
-        margin-left: 50px;
-        width: 30px;
-        height: 17px;
-        background-color: rgb(21, 105, 99);
-        position: relative;
-      }
-
-      .hexagon:before,
-      .hexagon:after {
-        content: "";
-        position: absolute;
-        width: 0;
-        border-left: 15px solid transparent;
-        border-right: 15px solid transparent;
-      }
-
-      .hexagon:before {
-        bottom: 100%;
-        border-bottom: 8px solid rgb(21, 105, 99);
-      }
-
-      .hexagon:after {
-        top: 100%;
-        width: 0;
-        border-top: 8px solid rgb(21, 105, 99);
-      }
-
-      .hexagon-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 10px;
-        font-family: Arial, sans-serif;
-        font-weight: bold;
-      }
+      
       .fontstyles{
     font-family: "Montserrat", sans-serif;
   font-style: normal;
 }
 .nextButton {
-        width: 25.3%;
+        width: 25.8%;
         height: 12.4vw;
         margin-top: 7vw;
         margin-right: -0.7vw;
@@ -104,7 +68,7 @@
 }
 
 .previousButton {
-    width: 25.3%;
+  width: 25.8%;
     height: 12.4vw;
     margin-top: 7vw;
     border: none;
