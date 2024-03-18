@@ -5,106 +5,216 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kembang Flower Mantap</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
   </head>
-    <body> 
-      <div class="container fontstyles">
-        <div style="margin-right: auto; margin-left: 4.4vw;">
-          <img src="logo.svg" alt="" style="height: 2.75vw; height: 2.75vw;">
-        </div>
-        <div class="searchNcart">
-            <img src="search.svg" style="height:1.35vw; width: 1.35vw;margin-right: 0.5vw;"alt="">
-        </div>
-        <div class="searchNcart">
-            <img src="cart.svg" style="height: 1.5vw; width: 1.5vw;" alt="">
-        </div>
-        <div class="signUp">
-            <p style="color: rgb(21, 105, 99); font-family: Arial, sans-serif;
-            font-weight: bold;font-size: 1.1vw;">Sign Up</p>
-        </div>
-        <div class="signIn">
-            <span class="signIn-content">Sign In</span>
-        </div>
-        <div></div>
-      </div>
-      <div class="fontstyles" style="display: flex; align-items: center; justify-content: center;">
-        <div style="flex: 1;">
-            <img src="cottonbro.png" alt="" style="position: absolute; width: 47.5%; height: auto;top: 0; left: 0;  z-index: -1;">
-        </div>
-        <div style="flex: 1;">
-            <p style=
-            "color: rgb(21, 105, 99);
-            margin-left: 7%;
-            margin-right: 5vw;
-            font-weight: 500;
-            font-size: 5.25vw;
-            margin-top: 16.65%">Kembang Flower Mantap</p>
-            <p style="font-size: 1.36vw; font-weight: 400; margin-left: 7.1%;
-             margin-right: 17%; line-height: 2.48vw; margin-top: 1.8vw;">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-
-        </div>
-     </div>
-    <div style="display: flex; justify-content: flex-end;margin-left: auto;margin-top: 1.4vw;">
-        <button class="previousButton fontstyles" style="display: flex; align-items: center;
-         justify-content: center;flex-direction: column; padding-top: 2.15vw;">     
-            <div style="display: flex; flex-direction: row; align-items: center;margin-top: -2.3vw; margin-left: 0.7vw;">
-                <img src="arrow_left.svg" style="margin-left: -5vw;height: 2.4vw; width: 2.4vw;" alt="">
-                <p style=" font-size: 1.85vw; color: #333333; margin-left: 0.6vw;">Previous</p>
-            </div>
-            <p class="fontstyles" style="color: rgb(21, 105, 99); font-size: 2.46vw;
-            margin-left: 1.2vw; margin-top: 1vw;">Kaktus Plant</p>
-        </button>
-        <button class="nextButton fontstyles" style="display: flex; align-items: center;
-         justify-content: center;flex-direction: column; padding-top: 3.9vw;">     
-            <div style="display: flex; flex-direction: row; align-items: center;margin-top: -2.3vw;">
-                <p style="margin-left: -9vw;margin-top: -1.2vw; font-size: 1.85vw; color: #F2F2F2">Next</p>
-                <img src="right_arrow.svg" style="margin-left: 0.85vw;margin-top:-1.3vw; width: 2.2vw;" alt="">
-            </div>
-            <p class="fontstyles" style="color: #F2F2F2; font-size: 2.46vw;
-            margin-right: 0.8vw; margin-top: 1vw;">Rahasia Plant</p>
-        </button>
-    </div>
-    <div>
+  <body>
+    <div class="firstContainer">
       <div>
+         <img src="cottonbro.png" class="cottonbro">
+         <div class="logo">
+          <img src="logo.svg">
+         </div>
+      </div>
         <div>
-          <div>
-            <img src="delivery.svg" alt="" style="width: 3vw; height: 3vw;">
+          <div class="Header">
+            <div class="rowContainer">
+              <div>
+                <img src="search.svg" class="search">
+              </div>
+              <div>
+                <img src="cart.svg" class="cart">
+              </div>
+              <div class="signUPbox NunitoFont">
+                <p style="font-size: 14px;">Sign Up</p>
+              </div>
+              <div class="signINbox NunitoFont">
+                <p style="font-size: 14px;">Sign In</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <p class="fontstyles"style="color:rgb(21, 105, 99)">
+          <div class="colContainer MontserratFont">
+          <div class="KembangFlowerMantap">
+            <p style="font-size: 69.5px; color: rgb(21, 105, 99)">
+              Kembang Flower Mantap
+            </p>
+          </div>
+          <div class="KembangLorem">
+            <p style="color: rgb(44,21,0); font-size: 18px; font-weight: 400;">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's 
+              standard dummy text ever since the 1500s, 
+            </p>
+          </div>
+          <div class="PrevNextButtons switchRight">
+            <button class="previousButton MontserratFont">
+              <div>
+                <div class="rowArrow">
+                  <img src="leftArrow.svg" class="leftArrow">
+                  <p class="previous">
+                    Previous
+                  </p>
+                </div>
+                <p class="kaktus">
+                  Kaktus Plant
+                </p>
+              </div>
+            </button>
+            <button class="nextButton MontserratFont">
+              <div>
+                <div class="rowArrow">
+                  <p class="next">
+                    Next
+                  </p>
+                  <img src="rightArrow.svg" class="rightArrow">
+                </div>
+                <p class="rahasia">
+                  Rahasia Plant
+                </p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="secondContainer">
+      <div class="rectangles MontserratFont">
+        <div class="rect">
+          <div class="rowContainer">
+            <img src="delivery.svg">
+            <p class="rectName delivPlantPriceText">
               Fast Delivery
             </p>
           </div>
+          <div>
+            <p class="rectLorem">
+              Lorem Ipsum is simply dummy text of the printing 
+              and typesetting industry. Lorem Ipsum has been 
+              the industry's standard 
+            </p>
+          </div>
         </div>
-        <div></div>
-      </div>
-      <div>
-        <div>
-          <div></div>
-          <div></div>
+        <div class="rect">
+          <div class="rowContainer">
+            <img src="headphones.svg">
+            <p class="rectName">
+              Great Customer Service
+            </p>
+          </div>
+          <div>
+            <p class="rectLorem">
+              Lorem Ipsum is simply dummy text of the printing 
+              and typesetting industry. Lorem Ipsum has 
+              been the industry's standard 
+            </p>
+          </div>
         </div>
-        <div></div>
-      </div>
-      <div>
-        <div>
-          <div></div>
-          <div></div>
+        <div class="rect">
+          <div class="rowContainer">
+            <img src="plant.svg">
+            <p class="rectName delivPlantPriceText">
+              Original Plants
+            </p>
+          </div>
+          <div>
+            <p class="rectLorem">
+              Lorem Ipsum is simply dummy text of the printing 
+              and typesetting industry. Lorem Ipsum has been 
+              the industry's standard 
+            </p>
+          </div>
         </div>
-        <div></div>
-      </div>
-      <div>
-        <div>
-          <div></div>
-          <div></div>
+        <div class="rect">
+          <div class="rowContainer">
+            <img src="dollar.svg">
+            <p class="rectName delivPlantPriceText">
+              Affordable Price
+            </p>
+          </div>
+          <div>
+            <p class="rectLorem">
+              Lorem Ipsum is simply dummy text of the printing 
+              and typesetting industry. Lorem Ipsum has been 
+              the industry's standard 
+            </p>
+          </div>
         </div>
-        <div></div>
       </div>
     </div>
-  </body>
-  <footer>
+    <div class="thirdContainer">
+        <div class="FeaturedCheaper MontserratFont rowContainerFeat">
+          <p style="font-size: 20px;">
+            Featured Plants
+          </p>
+          <div class="rowContainerFeat cheaperFirstBorder">
+            <p style="font-size: 12px;">
+              Cheaper First
+            </p>
+            <img src="downArrow.svg" class="downArrow">
+          </div>
+        </div>
+        <div class="kaktuses">
+          <div>
+            <img src="kaktusPlants.svg">
+            <div class="MontserratFont kaktusText">
+              <p style="font-weight: 400;">
+                Kaktus Plants
+              </p>
+              <p style="font-weight: 600">
+                IDR 85.000
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="landakPlants.svg">
+            <div class="MontserratFont kaktusText">
+              <p style="font-weight: 400;">
+                Landak Plants
+              </p>
+              <p style="font-weight: 600">
+                IDR 105.000
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="kekubungPlants1.svg">
+            <div class="MontserratFont kaktusText">
+              <p style="font-weight: 400;">
+                Kecubung Plants
+              </p>
+              <p style="font-weight: 600">
+                IDR 85.000
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="kekubungPlants2.svg">
+            <div class="MontserratFont kaktusText">
+              <p style="font-weight: 400;">
+                Kecubung Plants
+              </p>
+              <p style="font-weight: 600">
+                IDR 85.000
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="kekubungPlants3.svg">
+            <div class="MontserratFont kaktusText">
+              <p style="font-weight: 400;">
+                Kecubung Plants
+              </p>
+              <p style="font-weight: 600">
+                IDR 85.000
+              </p>
+            </div>            
+          </div>
+        </div>
+    </div>
+    <footer>
 
-  </footer>
+    </footer>
+  </body>
 </html>
+    

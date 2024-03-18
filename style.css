@@ -1,76 +1,225 @@
-.container {
-    display: flex;
-    align-items: center;
-    margin-top: 3vw;
-    margin-right: 3.75vw;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-  }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+.firstContainer{
+  display: flex;
+}
+.rowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 50px;
+}
 
-      .searchNcart {
-        width: 45px;
-        height: 35px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: -5px;
-        margin-left: 15px;
-      }
+.colContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
-      .signUp {
-        width: 110px;
-        height: 35px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: rgb(21, 105, 99);
-        font-size: 13px;
-        font-family: Arial, sans-serif;
-        font-weight: bold;
-    }
-      
-      .signIn {
-        width: 8.9%;
-        height: 2.7vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(21, 105, 99);
-        position: relative;
-        margin-right: 0.71vw;
-      }
+  margin-top: 113px;
+  margin-left: 50px;
+}
 
-      .signIn-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 1vw;
-        font-family: Arial, sans-serif;
-        font-weight: bold;
-      }
-      
-      .fontstyles{
-    font-family: "Montserrat", sans-serif;
+.cottonbro {
+  position: relative;
+  width: 620px;
+  height: auto;
+  z-index: -1;
+}
+
+.logo {
+  position: absolute;
+  padding-left: 57px;
+  top: 40px;
+  left: 0;
+}
+
+.search {
+  width: 18px;
+  height: 18px;
+  margin-right: 40px;
+}
+
+.cart {
+  width: 23px;
+  height: 23px;
+  margin-right: 8px;
+}
+
+.Header {
+  margin-top: 40px;
+}
+
+.signUPbox {
+  width:113px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:rgb(21, 105, 99);
+}
+
+.signINbox {
+  width:113px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(21, 105, 99);
+  margin-right: 32px;
+}
+
+.NunitoFont{
+  font-family: "Nunito", sans-serif;
   font-style: normal;
+  font-weight: bold;
 }
-.nextButton {
-        width: 25.8%;
-        height: 12.4vw;
-        margin-top: 7vw;
-        margin-right: -0.7vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(21, 105, 99);
-        border: none;
+.MontserratFont {
+font-family: "Montserrat", sans-serif;
+font-style: normal;
 }
-
-.previousButton {
-  width: 25.8%;
-    height: 12.4vw;
-    margin-top: 7vw;
-    border: none;
-    background-color: white;
+.KembangFlowerMantap{
+  width: 91%;
+}
+.KembangLorem{
+  line-height: 33px;
+  margin-top: 23px;
+  margin-left: 30px;
+  padding-right: 130px;
+}
+.PrevNextButtons {
+  display: flex;
+  margin-top: 113px;
+  right: 0px;
+  padding-right: 0px;
+}
+.previousButton{
+  border: none;
+  box-shadow: none;
+  height: 163px;
+  width: 310px;
+  background-color: white;
+  display: flex;
+  align-items:center;
+  justify-content: start;
+  padding-left: 39px;
+}
+.nextButton{
+  background-color:rgb(21, 105, 99);
+  border: none;
+  box-shadow: none;
+  height: 163px;
+  width: 350px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.previous{
+  color: rgb(51,51,51);
+  font-size: 25px;
+  margin-left: 15px;
+}
+.rowArrow{
+  display: flex;
+  align-items:center ;
+}
+.kaktus{
+  font-size: 32.5px;
+  color:rgb(21, 105, 99);
+padding-left: 5px;
+  padding-top: 14px;
+}
+.next{
+  color: rgb(242,242,242); 
+  font-size: 25px;
+  margin-left: 50px;
+}
+.rightArrow{
+  padding-left: 11px;
+}
+.rahasia{
+  color: rgb(242,242,242); 
+  font-size: 33px;
+  padding-top: 15px;
+  padding-right: 25px;
+}
+.rect{
+  border: 1px solid rgb(224,224,224);
+  margin: 17px;
+  padding-left: 16px;
+  padding-bottom: 14px;
+  padding-top: 20px;
+}
+.rectangles{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 16px;
+  margin-top: 125px;
+}
+.rectLorem{
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 16px;
+  padding-top:16px;
+  padding-bottom: 3px;
+  padding-right: 30px;
+}
+.rectName{
+  color:rgb(21, 105, 99);
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 18px;
+  line-height: 24px;
+  padding-top: 3px;
+}
+.delivPlantPriceText{
+  padding-right: 40px;
+}
+.thirdContainer{
+  margin-top: 65px;
+}
+.FeaturedCheaper{
+  justify-content: space-between;
+  margin: 0px 34px 0 58px;
+  padding-bottom:16px ;
+  border-bottom: 1px solid rgb(224,224,224);
+}
+.downArrow{
+  padding-left: 16px;
+}
+.rowContainerFeat {
+  display: flex;
+  align-items: center;
+}
+.cheaperFirstBorder{
+  border: 1px solid rgb(224,224,224);
+  padding: 8px 12px 8px 12px
+}
+.kaktuses{
+  display: grid;
+  width:  85%;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(1,1fr);
+  margin-left: 55px;
+  margin-top: 25px;
+  column-gap: 22px;
+}
+.kaktuses > div{
+  width: 220px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.kaktusText{
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 2px;
+  line-height: 28px;
 }
