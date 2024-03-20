@@ -1,0 +1,346 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+.firstContainer{
+  display: flex;
+}
+.rowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 35px;
+}
+
+.colContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 113px;
+  margin-left: 50px;
+}
+.cottonbro {
+  position: relative;
+  width: 48.5vw;
+  height: auto;
+  z-index: -1;
+}
+.logo {
+  position: absolute;
+  padding-left: 57px;
+  top: 40px;
+  left: 0;
+}
+
+.search {
+  width: 18px;
+  height: 18px;
+  margin-right: 40px;
+}
+.cart {
+  width: 23px;
+  height: 23px;
+  margin-right: 8px;
+}
+.Header {
+  margin-top: 40px;
+}
+.signUPbox {
+  width:9vw;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:rgb(21, 105, 99);
+}
+.signINbox {
+  width:9vw;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(21, 105, 99);
+}
+.NunitoFont{
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.MontserratFont {
+font-family: "Montserrat", sans-serif;
+font-style: normal;
+}
+.workSansFont{
+  font-family: "Work", sans-serif;
+  font-style: normal;
+}
+.poppinsFont{
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+.KembangFlowerMantap{
+  width: 91%;
+}
+.KembangLorem{
+  line-height: 33px;
+  margin-top: 23px;
+  margin-left: 30px;
+  padding-right: 130px;
+}
+.PrevNextButtons {
+  display: flex;
+  margin-top: 77px;
+  right: 0px;
+  padding-right: 0px;
+}
+.previousButton{
+  border: none;
+  box-shadow: none;
+  height: 12.5vw;
+  width: 24vw;
+  background-color: white;
+  display: flex;
+  align-items:center;
+  justify-content: start;
+  padding-left: 39px;
+}
+.nextButton{
+  background-color:rgb(21, 105, 99);
+  border: none;
+  box-shadow: none;
+  height: 12.5vw;
+  width: 24vw;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.previous{
+  color: rgb(51,51,51);
+  font-size: 2vw;
+  margin-left: 15px;
+}
+.rowArrow{
+  display: flex;
+  align-items:center ;
+}
+.kaktus{
+  font-size: 2.5vw;
+  color:rgb(21, 105, 99);
+  padding-left: 5px;
+  padding-top: 14px;
+}
+.next{
+  color: rgb(242,242,242); 
+  font-size: 2vw;
+  margin-left: 50px;
+}
+.rightArrow{
+  padding-left: 11px;
+}
+.rahasia{
+  color: rgb(242,242,242); 
+  font-size: 2.5vw;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+.rect{
+  border: 1px solid rgb(224,224,224);
+  margin: 17px;
+  padding-left: 16px;
+  padding-bottom: 16px;
+  padding-top: 20px;
+}
+.rectangles{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 16px;
+  margin-top: 130px;
+}
+.rectLorem{
+  font-size: 0.7vw;
+  font-weight: 400;
+  line-height: 14px;
+  padding-top:16px;
+  padding-bottom: 3px;
+  padding-right: 30px;
+}
+.rectName{
+  color:rgb(21, 105, 99);
+  font-size: 1.25vw;
+  font-weight: bold;
+  padding-left: 18px;
+  line-height: 24px;
+  padding-top: 3px;
+}
+.delivPlantPriceText{
+  padding-right: 47px;
+}
+.thirdContainer{
+  margin-top: 65px;
+}
+.FeaturedCheaper{
+  justify-content: space-between;
+  margin: 0px 34px 0 58px;
+  padding-top:3px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(224,224,224);
+}
+.downArrow{
+  padding-left: 16px;
+}
+.rowContainerFeat {
+  display: flex;
+  align-items: center;
+}
+.cheaperFirstBorder{
+  border: 1px solid rgb(224,224,224);
+  padding: 8px 12px 8px 12px
+}
+.kaktuses{
+  display: grid;
+  width:  85%;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(1,1fr);
+  margin-left: 55px;
+  margin-top: 25px;
+  column-gap: 25px;
+}
+.kaktuses > div{
+  width: 17vw;
+  height: 17vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.kaktusText{
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 2px;
+  line-height: 28px;
+}
+.buyMore{
+  font-size: 3.11vw;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding-left: 80px;
+  padding-right:140px;
+  line-height: 58px;
+  padding-top: 150px;
+}
+.plantsOnAWall{
+  width: 41vw;
+  padding-top: 148px;
+  padding-right: 32px;
+}
+.buyMoreLorem{
+  padding-left: 80px;
+  padding-right: 126px;
+  padding-top: 16px;
+  line-height: 29px;
+}
+.plantOnATableDiv{
+  width: 45vw;
+  height: 20vw;
+  padding-left: 62px;
+  padding-top: 77px;
+}
+.fifthContainer{
+  background-color: rgb(243,244,246);
+  margin-left: 60px;
+  margin-right: 35px;
+  margin-top: 76px;
+}
+.favourite{
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 58px;
+  letter-spacing: 0.4px;
+}
+.visitButton{
+  background-color:rgb(21, 105, 99);
+  border: none;
+  box-shadow: none;
+  height: 3.3vw;
+  width: 12vw;
+  margin-top: 30px;
+}
+.visitShop{
+  color: rgb(250,254,254);
+  font-size: 1.157vw;
+}
+.favouriteDiv{
+  margin-left: 95px;
+  margin-top: 8px;
+}
+.footer{
+  display: grid;
+  margin: auto;
+  height: 20vw;
+  width:  73.5%;
+  padding-top: 140px;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(1,1fr);
+  column-gap:5.5vw;
+}
+.plantkuLogo{
+  font-size: 2vw;
+  font-weight: 500;
+  color:rgb(21, 105, 99);
+  padding-bottom: 20px;
+}
+.plantkuHouse{
+  width:22.5vw;
+}
+.perusahaanDiv{
+  width:8vw;
+  line-height: 2.5vw;
+  padding-left: 10px;
+}
+.produk{
+  width:8vw;
+  line-height: 2.7vw;
+  padding-left: 7px;
+}
+.perusahaan{
+  font-size: 1.3vw;
+  font-weight:500;
+  padding-bottom: 5px;
+}
+.tentag{
+  font-size: 1.08vw;
+  font-weight: 400;
+}
+.berlanggananDiv{
+  width: 17vw;
+  padding-left: 5px;
+}
+.berlanggananEmail{
+  height: 30px;
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
+.masukanEmail{
+  padding:6px;
+  font-size: 1vw;
+  font-weight: 400;
+  padding-left:17px;
+  color: gray;
+  border: 1px solid rgb(224,224,224);
+}
+.submit{
+  background-color:rgb(21, 105, 99);
+  border: none;
+  box-shadow: none;
+  height: 1.6vw;
+  width: 4vw;
+  margin-top: 15px;
+}
+.submitText{
+  color: white;
+  font-size: 0.7vw;
+}
