@@ -12,25 +12,22 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   display: flex;
   align-items: center;
   justify-content: end;
-  margin-right: 50px;
+  margin-right: 35px;
 }
 
 .colContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
-
   margin-top: 113px;
   margin-left: 50px;
 }
-
 .cottonbro {
   position: relative;
-  width: 620px;
+  width: 48.5vw;
   height: auto;
   z-index: -1;
 }
-
 .logo {
   position: absolute;
   padding-left: 57px;
@@ -43,37 +40,31 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   height: 18px;
   margin-right: 40px;
 }
-
 .cart {
   width: 23px;
   height: 23px;
   margin-right: 8px;
 }
-
 .Header {
   margin-top: 40px;
 }
-
 .signUPbox {
-  width:113px;
-  height: 37px;
+  width:9vw;
+  height: 3vw;
   display: flex;
   align-items: center;
   justify-content: center;
   color:rgb(21, 105, 99);
 }
-
 .signINbox {
-  width:113px;
-  height: 37px;
+  width:9vw;
+  height: 3vw;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   background-color: rgb(21, 105, 99);
-  margin-right: 32px;
 }
-
 .NunitoFont{
   font-family: "Nunito", sans-serif;
   font-style: normal;
@@ -82,6 +73,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .MontserratFont {
 font-family: "Montserrat", sans-serif;
 font-style: normal;
+}
+.workSansFont{
+  font-family: "Work", sans-serif;
+  font-style: normal;
+}
+.poppinsFont{
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .KembangFlowerMantap{
   width: 91%;
@@ -94,15 +93,15 @@ font-style: normal;
 }
 .PrevNextButtons {
   display: flex;
-  margin-top: 113px;
+  margin-top: 77px;
   right: 0px;
   padding-right: 0px;
 }
 .previousButton{
   border: none;
   box-shadow: none;
-  height: 163px;
-  width: 310px;
+  height: 12.5vw;
+  width: 24vw;
   background-color: white;
   display: flex;
   align-items:center;
@@ -113,14 +112,14 @@ font-style: normal;
   background-color:rgb(21, 105, 99);
   border: none;
   box-shadow: none;
-  height: 163px;
-  width: 350px;
+  height: 12.5vw;
+  width: 24vw;
   padding-right: 0px;
   padding-left: 0px;
 }
 .previous{
   color: rgb(51,51,51);
-  font-size: 25px;
+  font-size: 2vw;
   margin-left: 15px;
 }
 .rowArrow{
@@ -128,14 +127,14 @@ font-style: normal;
   align-items:center ;
 }
 .kaktus{
-  font-size: 32.5px;
+  font-size: 2.5vw;
   color:rgb(21, 105, 99);
-padding-left: 5px;
+  padding-left: 5px;
   padding-top: 14px;
 }
 .next{
   color: rgb(242,242,242); 
-  font-size: 25px;
+  font-size: 2vw;
   margin-left: 50px;
 }
 .rightArrow{
@@ -143,15 +142,15 @@ padding-left: 5px;
 }
 .rahasia{
   color: rgb(242,242,242); 
-  font-size: 33px;
+  font-size: 2.5vw;
   padding-top: 15px;
-  padding-right: 25px;
+  padding-left: 20px;
 }
 .rect{
   border: 1px solid rgb(224,224,224);
   margin: 17px;
   padding-left: 16px;
-  padding-bottom: 14px;
+  padding-bottom: 16px;
   padding-top: 20px;
 }
 .rectangles{
@@ -159,26 +158,26 @@ padding-left: 5px;
   justify-content: space-between;
   margin-left: 40px;
   margin-right: 16px;
-  margin-top: 125px;
+  margin-top: 130px;
 }
 .rectLorem{
-  font-size: 9px;
+  font-size: 0.7vw;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 14px;
   padding-top:16px;
   padding-bottom: 3px;
   padding-right: 30px;
 }
 .rectName{
   color:rgb(21, 105, 99);
-  font-size: 16px;
+  font-size: 1.25vw;
   font-weight: bold;
   padding-left: 18px;
   line-height: 24px;
   padding-top: 3px;
 }
 .delivPlantPriceText{
-  padding-right: 40px;
+  padding-right: 47px;
 }
 .thirdContainer{
   margin-top: 65px;
@@ -186,7 +185,8 @@ padding-left: 5px;
 .FeaturedCheaper{
   justify-content: space-between;
   margin: 0px 34px 0 58px;
-  padding-bottom:16px ;
+  padding-top:3px;
+  padding-bottom: 15px;
   border-bottom: 1px solid rgb(224,224,224);
 }
 .downArrow{
@@ -207,11 +207,11 @@ padding-left: 5px;
   grid-template-rows: repeat(1,1fr);
   margin-left: 55px;
   margin-top: 25px;
-  column-gap: 22px;
+  column-gap: 25px;
 }
 .kaktuses > div{
-  width: 220px;
-  height: 220px;
+  width: 17vw;
+  height: 17vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -222,4 +222,66 @@ padding-left: 5px;
   padding-bottom: 10px;
   padding-left: 2px;
   line-height: 28px;
+}
+.buyMore{
+  font-size: 3.11vw;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding-left: 80px;
+  padding-right:140px;
+  line-height: 58px;
+  padding-top: 150px;
+}
+.plantsOnAWall{
+  width: 41vw;
+  padding-top: 148px;
+  padding-right: 32px;
+}
+.buyMoreLorem{
+  padding-left: 80px;
+  padding-right: 126px;
+  padding-top: 16px;
+  line-height: 29px;
+}
+.plantOnATableDiv{
+  width: 45vw;
+  height: 20vw;
+  padding-left: 62px;
+  padding-top: 77px;
+}
+.fifthContainer{
+  background-color: rgb(243,244,246);
+  margin-left: 60px;
+  margin-right: 35px;
+  margin-top: 76px;
+}
+.favourite{
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 58px;
+  letter-spacing: 0.4px;
+}
+.visitButton{
+  background-color:rgb(21, 105, 99);
+  border: none;
+  box-shadow: none;
+  height: 3.3vw;
+  width: 12vw;
+  margin-top: 30px;
+}
+.visitShop{
+  color: rgb(250,254,254);
+  font-size: 1.157vw;
+}
+.favouriteDiv{
+  margin-left: 95px;
+  margin-top: 8px;
+}
+.footer{
+  display: grid;
+  margin: auto;
+  width:  73.5%;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(1,1fr);
+  column-gap:7vw;
 }
