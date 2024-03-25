@@ -5,6 +5,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   font: inherit;
 }
+body{
+width: 1280px;
+}
 .firstContainer{
   display: flex;
 }
@@ -14,7 +17,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   justify-content: end;
   margin-right: 35px;
 }
-
 .colContainer {
   display: flex;
   align-items: center;
@@ -23,18 +25,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   margin-left: 50px;
 }
 .cottonbro {
-  position: relative;
-  width: 48.5vw;
-  height: auto;
+  width: 608px;
+  height: 740px;
   z-index: -1;
 }
 .logo {
   position: absolute;
   padding-left: 57px;
   top: 40px;
-  left: 0;
-}
 
+}
 .search {
   width: 18px;
   height: 18px;
@@ -49,16 +49,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   margin-top: 40px;
 }
 .signUPbox {
-  width:9vw;
-  height: 3vw;
+  width:auto;
+  height: auto;
+  padding: 8px 28px;
   display: flex;
   align-items: center;
   justify-content: center;
   color:rgb(21, 105, 99);
 }
 .signINbox {
-  width:9vw;
-  height: 3vw;
+  width:auto;
+  height: auto;
+  padding: 8px 28px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,24 +86,28 @@ font-style: normal;
 }
 .KembangFlowerMantap{
   width: 91%;
+  font-size: 69.5px;
+  color: rgb(21, 105, 99)
 }
 .KembangLorem{
   line-height: 33px;
   margin-top: 23px;
   margin-left: 30px;
   padding-right: 130px;
+  color: rgb(44,21,0); 
+  font-size: 18px; 
+  font-weight: 400;
 }
 .PrevNextButtons {
   display: flex;
   margin-top: 77px;
-  right: 0px;
   padding-right: 0px;
 }
 .previousButton{
   border: none;
   box-shadow: none;
-  height: 12.5vw;
-  width: 24vw;
+  height: 160px;
+  width: 320px;
   background-color: white;
   display: flex;
   align-items:center;
@@ -112,14 +118,14 @@ font-style: normal;
   background-color:rgb(21, 105, 99);
   border: none;
   box-shadow: none;
-  height: 12.5vw;
-  width: 24vw;
+  height: 160px;
+  width: 320px;
   padding-right: 0px;
   padding-left: 0px;
 }
 .previous{
   color: rgb(51,51,51);
-  font-size: 2vw;
+  font-size: 26px;
   margin-left: 15px;
 }
 .rowArrow{
@@ -127,14 +133,14 @@ font-style: normal;
   align-items:center ;
 }
 .kaktus{
-  font-size: 2.5vw;
+  font-size: 32px;
   color:rgb(21, 105, 99);
   padding-left: 5px;
   padding-top: 14px;
 }
 .next{
   color: rgb(242,242,242); 
-  font-size: 2vw;
+  font-size: 26px;
   margin-left: 50px;
 }
 .rightArrow{
@@ -142,9 +148,8 @@ font-style: normal;
 }
 .rahasia{
   color: rgb(242,242,242); 
-  font-size: 2.5vw;
+  font-size: 32px;
   padding-top: 15px;
-  padding-left: 20px;
 }
 .rect{
   border: 1px solid rgb(224,224,224);
@@ -161,7 +166,7 @@ font-style: normal;
   margin-top: 130px;
 }
 .rectLorem{
-  font-size: 0.7vw;
+  font-size: 9px;
   font-weight: 400;
   line-height: 14px;
   padding-top:16px;
@@ -170,7 +175,7 @@ font-style: normal;
 }
 .rectName{
   color:rgb(21, 105, 99);
-  font-size: 1.25vw;
+  font-size: 17px;
   font-weight: bold;
   padding-left: 18px;
   line-height: 24px;
@@ -210,8 +215,8 @@ font-style: normal;
   column-gap: 25px;
 }
 .kaktuses > div{
-  width: 17vw;
-  height: 17vw;
+  width: 219px;
+  height: 219px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -224,7 +229,7 @@ font-style: normal;
   line-height: 28px;
 }
 .buyMore{
-  font-size: 3.11vw;
+  font-size: 40px;
   font-weight: bold;
   letter-spacing: 0.5px;
   padding-left: 80px;
@@ -236,6 +241,8 @@ font-style: normal;
   width: 41vw;
   padding-top: 148px;
   padding-right: 32px;
+  width: 558px;
+  height: 772px;
 }
 .buyMoreLorem{
   padding-left: 80px;
@@ -254,6 +261,7 @@ font-style: normal;
   margin-left: 60px;
   margin-right: 35px;
   margin-top: 76px;
+  margin-bottom: 50px;
 }
 .favourite{
   font-size: 40px;
@@ -265,13 +273,14 @@ font-style: normal;
   background-color:rgb(21, 105, 99);
   border: none;
   box-shadow: none;
-  height: 3.3vw;
-  width: 12vw;
+  height: auto;
+  width: auto;
+  padding: 8px 30px;
   margin-top: 30px;
 }
 .visitShop{
   color: rgb(250,254,254);
-  font-size: 1.157vw;
+  font-size: 15px;
 }
 .favouriteDiv{
   margin-left: 95px;
@@ -279,44 +288,54 @@ font-style: normal;
 }
 .footer{
   display: grid;
-  margin: auto;
+  margin: 0 50px 50px 70px;
   height: 20vw;
-  width:  73.5%;
-  padding-top: 140px;
+  width:  91%;
+  padding-top: 50px;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: repeat(1,1fr);
   column-gap:5.5vw;
+  border-top: 1px solid rgb(75, 135, 130);
 }
 .plantkuLogo{
-  font-size: 2vw;
+  font-size: 24px;
   font-weight: 500;
   color:rgb(21, 105, 99);
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 8px;
 }
 .plantkuHouse{
-  width:22.5vw;
+  width:200px;
+  font-size: 16px; 
+  font-weight:500;
+  padding-bottom: 15px;
+}
+.plantkuHouseText{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
 }
 .perusahaanDiv{
-  width:8vw;
-  line-height: 2.5vw;
+  width:120px;
+  line-height: 35px;
   padding-left: 10px;
 }
 .produk{
-  width:8vw;
-  line-height: 2.7vw;
+  width:120px;
+  line-height: 35px;
   padding-left: 7px;
 }
 .perusahaan{
-  font-size: 1.3vw;
+  font-size: 16px;
   font-weight:500;
   padding-bottom: 5px;
 }
 .tentag{
-  font-size: 1.08vw;
+  font-size: 14px;
   font-weight: 400;
 }
 .berlanggananDiv{
-  width: 17vw;
+  width: 200px;
   padding-left: 5px;
 }
 .berlanggananEmail{
@@ -326,7 +345,7 @@ font-style: normal;
 }
 .masukanEmail{
   padding:6px;
-  font-size: 1vw;
+  font-size: 13px;
   font-weight: 400;
   padding-left:17px;
   color: gray;
@@ -336,11 +355,152 @@ font-style: normal;
   background-color:rgb(21, 105, 99);
   border: none;
   box-shadow: none;
-  height: 1.6vw;
-  width: 4vw;
+  height: auto;
+  width: auto;
   margin-top: 15px;
 }
 .submitText{
   color: white;
-  font-size: 0.7vw;
+  font-size: 10px;
+  padding: 6px 16px;
+}
+@media screen and (max-width: 768px){
+    body{
+      width: 768px;
+    }
+
+    .rectangles{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,1fr);
+    }
+    .cottonbro{
+      width: 850px;
+      height: 820px;
+    }
+    .colContainer{
+      margin: 0;
+    }
+    .firstContainer{
+      flex-direction: column;
+    }
+    .colContainer{
+      width: 600px;
+    }
+    .f1{
+      margin-top: -823px;
+      width: 800px;
+    }
+    .Header{
+      padding-bottom: 367px;
+    }
+    .cart{
+      padding-right: 30px;
+    }
+    .signUPbox{
+      background-color: white;
+    }
+    .KembangFlowerMantap{
+      color:white;
+      padding-top: 50px;
+    }
+    .KembangLorem{
+      color:white;
+      width: 500px;
+      padding-left: 65px;
+    }
+    .rowContainer{
+      margin:0;
+    }
+    .PrevNextButtons{
+        margin-left: 250px;
+    }
+    .rectangles{
+      margin-right: 0;
+      margin-left: 78px;
+      margin-top: 50px;
+    }
+    .rect>.rowContainer{
+      width:235px;
+    }
+    .kecubung2{
+      display: none;
+    }
+    .kaktuses{
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 190px;
+    }
+    .FeaturedCheaper{
+      width: 95%;
+    }
+    .kaktuses>div{
+      padding-bottom: 100px;
+    }
+    .rowContainerFeat>div{
+      margin-top: -450px;
+    }
+    .cheap{
+      margin-bottom: -450px;
+    }
+    .buyMore{
+      margin-right: -700px;
+      padding-left: 160px;
+      margin-top: -600px;
+      text-align: center;
+    }
+    .buyMoreLorem{
+      margin-right: -700px;
+      padding-left: 160px;
+      text-align: center;
+    }
+    .plantOnATableDiv{
+      display: none;
+    }
+    .plantsOnAWall{
+      padding-top: 400px;
+      padding-right: 40px;
+    }
+    .fifthContainer{
+      padding-top: 410px;
+      width:100%;
+      height: auto;
+    }
+    .favourite{
+      width: 300px;
+    }
+    .plant5{
+      padding-top: 125px;
+      width: 430px;
+    }
+    div>.favourite{
+      margin-left: -50px;
+    }
+    .visitButton{
+      margin-left: -50px;
+    }
+    .fifthContainer{
+      margin-bottom: 50px;
+    }
+    .footer{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 0 0 60px;
+      padding-top: 50px;
+      column-gap:100px;
+      width:100%;
+      
+    }
+    .plantkuHouseDiv{
+      width: 350px;
+    }
+    .produk, .berlanggananDiv{
+      margin-top:40px
+    }
+    
+}
+@media screen and (max-width: 320px){
+  .Header{
+    display: none; 
+  }
 }
