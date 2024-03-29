@@ -5,17 +5,24 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   font: inherit;
 }
-body{
+body,html{
 width: 1280px;
 }
 .firstContainer{
   display: flex;
 }
+.rowContainer1 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 50px;
+  padding-top: 40px;
+}
 .rowContainer {
   display: flex;
   align-items: center;
   justify-content: end;
-  margin-right: 35px;
+  margin-right: 35x;
 }
 .colContainer {
   display: flex;
@@ -45,27 +52,39 @@ width: 1280px;
   height: 23px;
   margin-right: 8px;
 }
-.Header {
-  margin-top: 40px;
-}
+
 .signUPbox {
   width:auto;
   height: auto;
   padding: 8px 28px;
   display: flex;
+  box-shadow: none;
+  border:none;
   align-items: center;
   justify-content: center;
+  background-color: white;
+}
+.signup{
+  font-size: 14px;
   color:rgb(21, 105, 99);
 }
+.signin{
+  font-size: 14px;
+}
 .signINbox {
-  width:auto;
+  width:108.89px;
   height: auto;
   padding: 8px 28px;
   display: flex;
+  box-shadow: none;
+  border: none;
   align-items: center;
   justify-content: center;
   color: white;
   background-color: rgb(21, 105, 99);
+}
+.featPlants{
+  font-size: 20px;
 }
 .NunitoFont{
   font-family: "Nunito", sans-serif;
@@ -107,7 +126,7 @@ font-style: normal;
   border: none;
   box-shadow: none;
   height: 160px;
-  width: 320px;
+  width: 310px;
   background-color: white;
   display: flex;
   align-items:center;
@@ -119,7 +138,7 @@ font-style: normal;
   border: none;
   box-shadow: none;
   height: 160px;
-  width: 320px;
+  width: 310px;
   padding-right: 0px;
   padding-left: 0px;
 }
@@ -161,7 +180,7 @@ font-style: normal;
 .rectangles{
   display: flex;
   justify-content: space-between;
-  margin-left: 40px;
+  margin-left: 16px;
   margin-right: 16px;
   margin-top: 130px;
 }
@@ -182,14 +201,20 @@ font-style: normal;
   padding-top: 3px;
 }
 .delivPlantPriceText{
-  padding-right: 47px;
+  padding-right: 70px;
+}
+.delivery{
+  padding-right: 100px;
+}
+.customer{
+  padding-right: 20px;
 }
 .thirdContainer{
   margin-top: 65px;
 }
 .FeaturedCheaper{
   justify-content: space-between;
-  margin: 0px 34px 0 58px;
+  margin: 0px 40px 0 40px;
   padding-top:3px;
   padding-bottom: 15px;
   border-bottom: 1px solid rgb(224,224,224);
@@ -210,7 +235,7 @@ font-style: normal;
   width:  85%;
   grid-template-columns: repeat(5,1fr);
   grid-template-rows: repeat(1,1fr);
-  margin-left: 55px;
+  margin-left: 40px;
   margin-top: 25px;
   column-gap: 25px;
 }
@@ -235,31 +260,29 @@ font-style: normal;
   padding-left: 80px;
   padding-right:140px;
   line-height: 58px;
-  padding-top: 150px;
 }
 .plantsOnAWall{
-  width: 41vw;
-  padding-top: 148px;
   padding-right: 32px;
-  width: 558px;
-  height: 772px;
+  padding-top: 20px;
+  width: 590px;
+  height: 920px;
 }
 .buyMoreLorem{
   padding-left: 80px;
   padding-right: 126px;
-  padding-top: 16px;
+  padding-top: 70px;
   line-height: 29px;
 }
 .plantOnATableDiv{
-  width: 45vw;
-  height: 20vw;
+  width: 568px;
+  height: 251px;
   padding-left: 62px;
   padding-top: 77px;
 }
 .fifthContainer{
   background-color: rgb(243,244,246);
-  margin-left: 60px;
-  margin-right: 35px;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-top: 76px;
   margin-bottom: 50px;
 }
@@ -288,9 +311,9 @@ font-style: normal;
 }
 .footer{
   display: grid;
-  margin: 0 50px 50px 70px;
+  margin: 0 0 50px 40px;
   height: 20vw;
-  width:  91%;
+  width:  93.5%;
   padding-top: 50px;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: repeat(1,1fr);
@@ -364,35 +387,92 @@ font-style: normal;
   font-size: 10px;
   padding: 6px 16px;
 }
+.burgermenu{
+  visibility: hidden;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.signUPbox:hover{
+  background-color: rgb(236, 236, 236);
+  transition: 0.2s;
+  transform:scale(1.1)
+}
+.signINbox:hover{
+  background-color: rgb(17, 87, 81);
+  transition: 0.2s;
+  transform:scale(1.1);
+}
+.cart:hover{
+  transition: 0.2s;
+  transform:scale(1.15);
+}
+.search:hover{
+  transition: 0.2s;
+  transform:scale(1.2);
+}
+.previousButton:hover{
+  background-color: rgb(236, 236, 236);
+  transition: 0.5s;
+}
+.rect:hover{
+  transition: 0.4s;
+  transform:scale(1.05);
+  box-shadow:0 0 10px 5px rgb(75, 135, 130)
+}
+.nextButton:hover, .visitButton:hover, .submit:hover{
+  background-color: rgb(17, 87, 81);
+  transition: 0.5s;
+}
+.kaktusImg:hover, .kecubung2:hover{
+  transition: 0.4s;
+  transform:scale(1.15);
+}
+
 @media screen and (max-width: 768px){
-    body{
+    body, html{
       width: 768px;
     }
-
+    .burgermenuImg{
+      width: 1px;
+      height: 1px;
+    }
     .rectangles{
       display: grid;
       grid-template-columns: repeat(2,1fr);
       grid-template-rows: repeat(2,1fr);
+      width: 768px;
+      flex-wrap: wrap;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 50px;
     }
     .cottonbro{
-      width: 850px;
-      height: 820px;
+      width: 768px;
+      height: 740px;
+    }
+    .rowContainer1{
+      padding-top: 120px;
     }
     .colContainer{
       margin: 0;
     }
     .firstContainer{
       flex-direction: column;
+      width: 768px;
     }
     .colContainer{
       width: 600px;
     }
     .f1{
       margin-top: -823px;
-      width: 800px;
+      width: 768px;
     }
     .Header{
-      padding-bottom: 367px;
+      padding-bottom: 290px;
     }
     .cart{
       padding-right: 30px;
@@ -413,12 +493,10 @@ font-style: normal;
       margin:0;
     }
     .PrevNextButtons{
-        margin-left: 250px;
+        margin-left: 170px;
     }
-    .rectangles{
-      margin-right: 0;
-      margin-left: 78px;
-      margin-top: 50px;
+    .rectLorem{
+      font-size: 11px;
     }
     .rect>.rowContainer{
       width:235px;
@@ -426,69 +504,83 @@ font-style: normal;
     .kecubung2{
       display: none;
     }
+
+    .thirdContainer{
+      width: 768px;
+    }
     .kaktuses{
       display: flex;
       flex-wrap: wrap;
-      margin-left: 190px;
+      margin-left: 145px;
+      width:500px;
+      height: 640px;
     }
     .FeaturedCheaper{
       width: 95%;
+        margin-left: 20px;
     }
     .kaktuses>div{
       padding-bottom: 100px;
     }
     .rowContainerFeat>div{
-      margin-top: -450px;
+      margin-top: -150px;
     }
     .cheap{
-      margin-bottom: -450px;
+      margin-bottom: -150px;
     }
     .buyMore{
-      margin-right: -700px;
-      padding-left: 160px;
-      margin-top: -600px;
+      padding-left: 110px;
+      padding-right: 110px;
       text-align: center;
     }
     .buyMoreLorem{
-      margin-right: -700px;
-      padding-left: 160px;
+      padding-left: 126px;
       text-align: center;
     }
     .plantOnATableDiv{
-      display: none;
+      padding-left: 100px;
+      padding-top: 30px;
+    }
+    .rowContainerFeat>.MontserratFont{
+      margin-top: 50px;
     }
     .plantsOnAWall{
-      padding-top: 400px;
-      padding-right: 40px;
-    }
-    .fifthContainer{
-      padding-top: 410px;
-      width:100%;
-      height: auto;
+      visibility: hidden;
+    position: absolute;
+    left: 0;
     }
     .favourite{
       width: 300px;
+      line-height: 50px;
+    }
+    .favouriteDiv{
+      width: 280px;
+      margin: 35px 0 0 50px;
     }
     .plant5{
-      padding-top: 125px;
-      width: 430px;
-    }
-    div>.favourite{
-      margin-left: -50px;
+      width: 350px;
+      padding-top: 100px;
     }
     .visitButton{
-      margin-left: -50px;
+      margin-top: 20px;
     }
     .fifthContainer{
-      margin-bottom: 50px;
+      width: 700px;
+      height: 200px;
+      margin:  50px 0 50px 0;
+      padding-top: 110px;
+      margin-left: 30px;
+      height: auto;
     }
     .footer{
       display: flex;
       flex-wrap: wrap;
-      margin: 0 0 0 60px;
+      margin: 0 0 0 0;
       padding-top: 50px;
+      padding-bottom: 150px;
+      padding-left: 50px;
       column-gap:100px;
-      width:100%;
+      width: 93.5%;
       
     }
     .plantkuHouseDiv{
@@ -500,7 +592,229 @@ font-style: normal;
     
 }
 @media screen and (max-width: 320px){
+  body, html{
+    width: 320px;
+  }
   .Header{
-    display: none; 
+    position: absolute;
+    visibility: hidden;
+  }
+  .firstContainer, .cottonbro, .cottonDiv, .PrevNextButtons,
+  .colContainer, .FeaturedCheaper, .kaktuses,
+  .buyMore, .buyMoreLorem, .rowContainerFeat, .cheap, .f1,
+  .thirdContainer, .MontserratFont, .plantOnATableDiv,
+  .fifthContainer, .plant5, .Header,.favouriteDiv, 
+  .plantkuHouseDiv, .footer, .perusahaanDiv, .produk,
+  .berlanggananDiv{
+    width: 100%
+  }
+  .plantOnATableDiv>img{
+    width: 320px;
+  }
+  .buyMore, .buyMoreLorem, .plantOnATableDiv, .KembangLorem,
+  .footer, .previousButton, div>.logo, .Header, .perusahaan {
+    padding: 0;
+  }
+  .PrevNextButtons, .KembangLorem{
+    margin: 0;
+  }
+  .FeaturedCheaper, .favouriteDiv, .fifthContainer{
+    margin: 0 ;
+  }
+  div>.rowContainer1{
+    width: 1px;
+    height: 1px;
+    margin: 0;padding: 0;
+  }
+  .kaktuses{
+    grid-template-columns: repeat(2,0.5fr);
+    grid-template-rows: (repeat(2,0.5fr));
+    width: 320px;
+    height: 470px;
+    margin: 0;
+  }
+
+  .kaktuses > div{
+    width: 40%;
+    padding-bottom: 10px;
+    margin-left: 7px;
+    padding-top: 10px;
+  }
+  .plantsOnAWall{
+    width: 1px;
+    height: 1px;
+  }
+  .f1{
+    margin-top: -170px;
+  }
+  .plant5{
+    position: absolute;
+    left: 0;
+    height: 1px;
+    width: 1px;
+    visibility: hidden;
+  }
+  .kaktusImg{
+    width:130px;
+    height: 130px;
+  }
+  .kaktusText{
+    width: 130px;
+    padding-left: 10px;
+  }
+  div>.kaktusImg{
+    width: 150px;
+  }
+  .kaktus, .rahasia{
+    font-size: 20px;
+    padding-top: 0;
+  }
+  .previousButton, .nextButton{
+    height: auto;
+    padding: 20px 10px;
+  }
+  .next{
+    margin-left: 0;
+    padding-left: 8px;
+  }
+  .previous{
+    margin-left: 8px;
+  }
+  .leftArrow{
+    padding-left: 4px;
+  }
+  .leftArrow, .rightArrow{
+    width: 20px;
+    height: 20px;
+  }
+  .previous, .next{
+    font-size: 20px;
+  }
+  .PrevNextButtons{
+    padding-top: 12px;
+  }
+  .logo{
+    left: 20px;
+    top: 20px;
+  }
+  .KembangFlowerMantap{
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  .KembangLorem{
+    font-size: 12px;
+    line-height: 20px;
+    width: 90%;
+  }
+  .cottonbro{
+    height: 330px;
+  }
+  .logoImg{
+    width: 40px;
+    height: 40px;
+  }
+  .burgermenu{
+    visibility: visible;
+    
+    left: auto;
+    right: 20px;
+    top: 20px;
+  }
+  .burgermenuImg{
+    width: 40px;
+    height: 40px;
+    display: flex;
+  }
+  .rect{
+    width: 250px;
+    padding-right: 16px;
+  }
+  .rectangles{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  .rectLorem{
+    font-size: 12px;
+  }
+  .featPlants{
+    font-size: 14px;
+  }
+  .downArrow{
+    padding-left: 10px;
+  }
+  .cheap{
+    width: 100px;
+  }
+  .FeaturedCheaper{
+   width: 90%;
+   margin-left: 18px;
+   margin-right: 0;
+  }
+  .thirdContainer{
+    margin-top: 20px;
+  }
+  .buyMore{
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .buyMoreLorem{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 85%
+  }
+  .favourite{
+    font-size: 20px;
+    line-height: 25px;
+    padding-left: 20px;
+  }
+  .visitButton{
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .visitShop{
+    font-size: 8px;
+  }
+  .fifthContainer{
+    padding-top: 150px;
+    margin-bottom: 30px;
+  }
+  .favouriteDiv{
+    padding: 25px -15px 25px 25px;
+    width: 100%;
+  }
+  .plantkuLogo, .plantkuHouse, .plantkuHouseText{
+    padding-left: 20px;
+  }
+  .plantkuHouseText{
+    padding-right: 20px;
+  }
+  .perusahaanDiv, .produk{
+    padding-left: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+  }
+  .berlanggananDiv{
+    padding-left: 20px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+  }
+  .plantOnATableDiv{
+    height: 200px;
+  }
+    .plantkuLogo{
+      padding-top: 30px;
+    }
+  .masukanEmail{
+    width: 162px;
+    padding-left: 30  px;
   }
 }

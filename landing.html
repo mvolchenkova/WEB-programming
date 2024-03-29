@@ -10,83 +10,85 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+    
   </head>
   <body>
     <div class="firstContainer">
-      <div>
-         <img src="cottonbro.png" class="cottonbro">
-         <div class="logo">
-          <img src="logo.svg">
-         </div>
+      <div class="cottonDiv">
+        <img src="cottonbro.png" class="cottonbro">
+        <div class="logo">
+          <img src="logo.svg" class="logoImg">
+        </div>
       </div>
         <div class="f1">
+          <div class="burgermenu">
+            <img src="menu.png" class="burgermenuImg">
+          </div>
           <div class="Header">
-            <div class="rowContainer">
+            <div class="rowContainer1">
               <div>
                 <img src="search.svg" class="search">
               </div>
               <div>
                 <img src="cart.svg" class="cart">
               </div>
-              <div class="signUPbox NunitoFont">
-                <p style="font-size: 14px;">Sign Up</p>
-              </div>
-              <div class="signINbox NunitoFont">
-                <p style="font-size: 14px;">Sign In</p>
-              </div>
+              <button class="signUPbox NunitoFont">
+                <p class=signup>Sign Up</p>
+              </button>
+              <button class="signINbox NunitoFont">
+                <p class=signin>Sign In</p>
+              </button>
             </div>
           </div>
           <div class="colContainer MontserratFont">
-          <div class="KembangFlowerMantap">
-            <p>
-              Kembang Flower Mantap
-            </p>
-          </div>
-          <div class="KembangLorem">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's 
-              standard dummy text ever since the 1500s, 
-            </p>
-          </div>
-          <div class="PrevNextButtons">
-            <button class="previousButton MontserratFont">
-              <div>
-                <div class="rowArrow">
-                  <img src="leftArrow.svg" class="leftArrow">
-                  <p class="previous">
-                    Previous
+            <div class="KembangFlowerMantap">
+              <p>
+                Kembang Flower Mantap
+              </p>
+            </div>
+            <div class="KembangLorem">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's 
+                standard dummy text ever since the 1500s, 
+              </p>
+            </div>
+            <div class="PrevNextButtons">
+              <button class="previousButton MontserratFont">
+                <div>
+                  <div class="rowArrow">
+                    <img src="leftArrow.svg" class="leftArrow">
+                    <p class="previous">
+                      Previous
+                    </p>
+                  </div>
+                  <p class="kaktus">
+                    Kaktus Plant
                   </p>
                 </div>
-                <p class="kaktus">
-                  Kaktus Plant
-                </p>
-              </div>
-            </button>
-            <button class="nextButton MontserratFont">
-              <div>
-                <div class="rowArrow">
-                  <p class="next">
-                    Next
+              </button>
+              <button class="nextButton MontserratFont">
+                <div>
+                  <div class="rowArrow">
+                    <p class="next">
+                      Next
+                    </p>
+                    <img src="rightArrow.svg" class="rightArrow">
+                  </div>
+                  <p class="rahasia">
+                    Rahasia Plant
                   </p>
-                  <img src="rightArrow.svg" class="rightArrow">
                 </div>
-                <p class="rahasia">
-                  Rahasia Plant
-                </p>
-              </div>
-            </button>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div>
       <div class="rectangles MontserratFont">
         <div class="rect">
           <div class="rowContainer">
             <img src="delivery.svg">
-            <p class="rectName delivPlantPriceText">
+            <p class="rectName delivPlantPriceText delivery">
               Fast Delivery
             </p>
           </div>
@@ -101,7 +103,7 @@
         <div class="rect">
           <div class="rowContainer">
             <img src="headphones.svg">
-            <p class="rectName">
+            <p class="rectName customer">
               Great Customer Service
             </p>
           </div>
@@ -144,10 +146,9 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="thirdContainer">
+      <div class="thirdContainer">
         <div class="FeaturedCheaper MontserratFont rowContainerFeat">
-          <p style="font-size: 20px;">
+          <p class="featPlants">
             Featured Plants
           </p>
           <div class="rowContainerFeat cheaperFirstBorder cheap">
@@ -159,7 +160,7 @@
         </div>
         <div class="kaktuses">
           <div>
-            <img src="kaktusPlants.svg">
+            <img src="kaktusPlants.svg" class="kaktusImg">
             <div class="MontserratFont kaktusText">
               <p style="font-weight: 400;">
                 Kaktus Plants
@@ -170,7 +171,7 @@
             </div>
           </div>
           <div>
-            <img src="landakPlants.svg">
+            <img src="landakPlants.svg" class="kaktusImg">
             <div class="MontserratFont kaktusText">
               <p style="font-weight: 400;">
                 Landak Plants
@@ -181,7 +182,7 @@
             </div>
           </div>
           <div>
-            <img src="kekubungPlants1.svg">
+            <img src="kekubungPlants1.svg" class="kaktusImg">
             <div class="MontserratFont kaktusText">
               <p style="font-weight: 400;">
                 Kecubung Plants
@@ -192,7 +193,7 @@
             </div>
           </div>
           <div>
-            <img src="kekubungPlants2.svg">
+            <img src="kekubungPlants2.svg" class="kaktusImg">
             <div class="MontserratFont kaktusText">
               <p style="font-weight: 400;">
                 Kecubung Plants
@@ -214,9 +215,8 @@
             </div>            
           </div>
         </div>
-    </div>
-    <div class="rowContainerFeat">
-      <div>
+      </div>
+      <div class="rowContainerFeat">
         <div class="MontserratFont">
           <p class="buyMore">
             Buy more plants, it helps you to be relaxed 
@@ -227,97 +227,96 @@
             Sed et mauris justo. Nulla eu enim non mauris maximus dignissim. 
             Maecenas vitae eros sapien. Quisque pellentesque tempus dignissim.
           </p>
+          <div class="plantOnATableDiv">
+            <img src="plantOnATable.svg">
+          </div>
         </div>
-        <div class="plantOnATableDiv">
-          <img src="plantOnATable.svg">
-        </div>
-      </div>
-      <div>
-        <img src="plantsOnAWall.svg" class="plantsOnAWall">
-      </div>
-    </div>
-    <div class="fifthContainer">
-       <div class="rowContainerFeat">
         <div>
-          <div class="MontserratFont favouriteDiv">
-            <p class="favourite">
-              Get your favourites plant on our shop now
-            </p>
-            <button class="visitButton">
-              <p class="visitShop NunitoFont">
-                Visit Shop
+          <img src="plantsOnAWall.svg" class="plantsOnAWall">
+        </div>
+      </div>
+      <div class="fifthContainer">
+        <div class="rowContainerFeat">
+          <div>
+            <div class="MontserratFont favouriteDiv">
+              <p class="favourite">
+                Get your favourites plant on our shop now
               </p>
-            </button>
-          </div>
-        </div>
-        <div>
-         <img src="plant5.svg" class="plant5">
-        </div>
-       </div>
-    </div>
-    <footer>
-      <div class="footer">
-        <div>
-          <nav class="poppinsFont">
-            <p class="plantkuLogo">
-              PLANTKU
-            </p>
-          </nav>
-          <div class="workSansFont plantkuHouseDiv">
-            <p class="plantkuHouse">
-              Plantku house
-            </p>
-            <p class="plantkuHouseText">
-              Jl. Laksda Adisucipto No.51, Demangan, Kec. Depok, 
-              Kota Yogyakarta, Daerah Istimewa Yogyakarta 55282
-            </p>
-          </div>
-        </div>
-        <div class="workSansFont perusahaanDiv">
-          <p class="perusahaan">
-            Perusahaan
-          </p>
-          <div>
-            <p class="tentag">
-              Tentag Kami
-            </p>
-            <p class="tentag">
-              Hubungi Kami
-            </p>
-          </div>
-        </div>
-        <div class="workSansFont produk">
-          <p class="Produk">
-            Produk
-          </p>
-          <div>
-            <p class="tentag">
-              Tanaman
-            </p>
-            <p class="tentag">
-              Tanaman Lain
-            </p>
-          </div>
-        </div>
-        <div class="berlanggananDiv">
-          <p class="workSansFont berlanggananEmail">
-            Berlangganan Email Kami
-          </p>
-          <div class="masukanEmail">
-            <p class="workSansFont">
-              Masukan Alamat Email
-            </p>
+              <button class="visitButton">
+                <p class="visitShop NunitoFont">
+                  Visit Shop
+                </p>
+              </button>
+            </div>
           </div>
           <div>
-            <button class="submit">
-              <p class="submitText">
-                Submit
-              </p>
-            </button>
+          <img src="plant5.svg" class="plant5">
           </div>
         </div>
       </div>
-    </footer>
-  </body>
-</html>
+      <footer>
+        <div class="footer">
+          <div>
+            <div class="poppinsFont">
+              <p class="plantkuLogo">
+                PLANTKU
+              </p>
+            </div>
+            <div class="workSansFont plantkuHouseDiv">
+              <p class="plantkuHouse">
+                Plantku house
+              </p>
+              <p class="plantkuHouseText">
+                Jl. Laksda Adisucipto No.51, Demangan, Kec. Depok, 
+                Kota Yogyakarta, Daerah Istimewa Yogyakarta 55282
+              </p>
+            </div>
+          </div>
+          <div class="workSansFont perusahaanDiv">
+            <p class="perusahaan">
+              Perusahaan
+            </p>
+            <div>
+              <p class="tentag">
+                Tentag Kami
+              </p>
+              <p class="tentag">
+                Hubungi Kami
+              </p>
+            </div>
+          </div>
+          <div class="workSansFont produk">
+            <p class="Produk">
+              Produk
+            </p>
+            <div>
+              <p class="tentag">
+                Tanaman
+              </p>
+              <p class="tentag">
+                Tanaman Lain
+              </p>
+            </div>
+          </div>
+          <div class="berlanggananDiv">
+            <p class="workSansFont berlanggananEmail">
+              Berlangganan Email Kami
+            </p>
+            <div class="masukanEmail">
+              <p class="workSansFont">
+                Masukan Alamat Email
+              </p>
+            </div>
+            <div>
+              <button class="submit">
+                <p class="submitText">
+                  Submit
+                </p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </body>
+  </html>
     
