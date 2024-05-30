@@ -40,7 +40,10 @@ width: 1280px;
   position: absolute;
   padding-left: 57px;
   top: 40px;
-
+  display: flex;
+  align-items: center;
+  width: 280px;
+  justify-content: space-between;
 }
 .search {
   width: 18px;
@@ -201,7 +204,7 @@ font-style: normal;
   padding-top: 3px;
 }
 .delivPlantPriceText{
-  padding-right: 70px;
+  padding-right: 50px;
 }
 .delivery{
   padding-right: 100px;
@@ -400,12 +403,16 @@ padding-top: 6px;
   padding: 6px 16px;
 }
 .burgermenu{
-  visibility: hidden;
   width: 40px;
   height: 40px;
   position: absolute;
-  left: 0;
+  z-index: 1;
+  right: 0;
   top: 0;
+  display: none;
+  align-items:center;
+  justify-content:center ;
+  flex-direction: column;
 }
 .burgerSC{
   display: flex;
@@ -434,13 +441,15 @@ padding-top: 6px;
  font-weight: bold;
 }
 .burger{
-  visibility: hidden;
-  width: 250px;
-  margin:0 0 0 35px;
-  padding: 15px 0 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-around;
   position: absolute;
-  top: 0;
-  right: 0;
+  width: 320px;
+  padding: 40px 0px;
+  margin-top: -1000px;
+  transition: margin-top 0.5s ease;
   background-color: rgb(244,244,244);
 }
 .signUPbox:hover{
@@ -480,6 +489,10 @@ padding-top: 6px;
 }
 .plant5{
   animation: slide 8s infinite;
+}
+.burgermenuImg{
+  display: none;
+  z-index: 20;
 }
 @keyframes slide{
   0% {
@@ -543,6 +556,11 @@ padding-top: 6px;
       width: 1px;
       height: 1px;
     }
+    .burgJS{
+      z-index: 2;
+
+    }
+    
     .rectangles{
       display: grid;
       grid-template-columns: repeat(2,1fr);
@@ -723,6 +741,9 @@ padding-top: 6px;
   }
   .plantOnATableDiv>img{
     width: 320px;
+  }
+  .burgermenu{
+    display: flex;
   }
   .buyMore, .buyMoreLorem, .plantOnATableDiv, .KembangLorem,
   .footer, .previousButton, div>.logo, .Header, .perusahaan {
@@ -964,4 +985,354 @@ padding-top: 6px;
     font-size: 8px;
     padding: 0;
   }
+}
+.slide-from-top {
+  margin-top:-80px !important;
+}
+.burgJS{
+  background-color:transparent;
+  border:none;
+}
+.registr{
+  margin-top: 50px;
+  border:none;
+  border-radius:30px;
+  width: 100%;
+  height: 150px;
+  font-size: 3.5em;
+}
+.registration{
+  padding-bottom: 30px;
+  font-weight: bolder;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  
+}
+#formregistr{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#formregistr>b{
+  padding-bottom: 0;
+}
+#formregistr>p{
+  padding-bottom: 20px;
+  font-size: 1.3em;
+  width: 80%;
+  text-align: center;
+}
+.authRegDiv{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: -2000px;
+  transition: margin-left 0.5s ease;
+  
+}
+.authReg{
+width: 80%;
+  background-color:white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius:50px;
+  padding-bottom:50px;
+  padding-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.authorizationDiv{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+
+  transition: margin-left 0.5s ease;
+  margin-top: 100px;
+}
+.authorization{
+  background-color:white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius:50px;
+  padding-bottom:50px;
+  margin-top: 150px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.formAuthoriz{
+display: flex;
+align-items:center;
+justify-content: center;
+flex-direction: column;
+}
+.authLab{
+display: flex;
+align-items:center;
+justify-content: center;
+flex-direction: column;
+}
+.authLab>label{
+font-size: 2.2em;
+}
+form>b{
+font-size: 3em;
+padding: 20px;
+}
+
+.formDiv2{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:90%;
+}
+.burgerDiv{
+  position: absolute;
+  margin-top: -1000px;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content:center ;
+  transition: margin-top 0.5s ease;
+}
+.regDiv{
+  position: absolute;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  background-color:white;
+  width: 80%;
+  border-radius:50px;
+  top:130px;
+  padding-top: 50px;
+  margin-left: -4000px;
+  transition: margin-left 0.5s ease;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.regDivBig{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.formreg{
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  width: 100%;
+}
+#agreeCheckbox {
+  width: 30px;
+  height: 30px;
+}
+.checkboxText{
+  font-size: 1.6em;
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  content: url("../sun.svg");
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(37,147,133);
+
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(37,147,133);
+}
+input:checked + .slider:before {
+  content: url("../moon.png");
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.change-lang{
+  width: 60px;
+  height: 30px;
+  font-weight: bold;
+  border-width: 2px;
+  border-radius:20px;
+  padding: 5px;
+}
+.authRegDiv{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: -2000px;
+  transition: margin-left 0.5s ease;
+  
+}
+.authReg{
+width: 80%;
+  background-color:white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius:50px;
+  padding-bottom:50px;
+  padding-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.authorizationDiv{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-left: -3000px;
+  transition: margin-left 0.5s ease;
+  margin-top: 5px
+}
+.authorization{
+  width: 80%;
+  background-color:white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius:50px;
+  padding-bottom:50px;
+  padding-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.formAuthoriz{
+display: flex;
+align-items:center;
+justify-content: center;
+flex-direction: column;
+}
+.authLab{
+display: flex;
+align-items:center;
+justify-content: center;
+flex-direction: column;
+}
+.authLab>label{
+font-size: 2.2em;
+}
+.authRegDiv{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: -2000px;
+  transition: margin-left 0.5s ease;
+  
+}
+.authReg{
+width: 80%;
+  background-color:white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius:50px;
+  padding-bottom:50px;
+  padding-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.slide-from-left {
+  margin-left:350px !important;
+}
+.exit3, .exit2{
+  border:none;
+  background-color:transparent;
+  color:red;
+  font-size: 2em;
+}
+.regId, .checkboxText, #auth,
+#label1, #label2{
+  font-size: 1.5em;
+}
+.checkboxText{
+  width: 80%;
+}
+input[type="text"],
+input[type="password"]{
+  width: 80%;
+  margin: 20px 0 20px 0;
+  font-size: 1.3em;
+  border-width:2px;
+  border-radius:15px;
+  padding: 0 10px 0 10px;
+}
+
+input[type="submit"] {
+  width: 30%;
+  font-size: 3em;
+  border:none;
+  border-radius:30px;
+  padding: 10px;
+}
+.overlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  overflow: hidden;
+}
+.bodyOverflow {
+  overflow-y: hidden;
 }
