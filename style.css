@@ -7,6 +7,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 body,html{
 width: 1280px;
+overflow-x: hidden;
 }
 .firstContainer{
   display: flex;
@@ -16,7 +17,7 @@ width: 1280px;
   align-items: center;
   justify-content: end;
   margin-right: 50px;
-  padding-top: 40px;
+  margin-top: -37px;
 }
 .rowContainer {
   display: flex;
@@ -37,12 +38,12 @@ width: 1280px;
   z-index: -1;
 }
 .logo {
-  position: absolute;
   padding-left: 57px;
-  top: 40px;
+  padding-top: 40px;
   display: flex;
   align-items: center;
   width: 280px;
+ 
   justify-content: space-between;
 }
 .search {
@@ -234,10 +235,8 @@ font-style: normal;
   padding: 8px 12px 8px 12px;
 }
 .kaktuses{
-  display: grid;
+  display: flex;
   width:  85%;
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: repeat(1,1fr);
   margin-left: 40px;
   margin-top: 25px;
   column-gap: 25px;
@@ -319,10 +318,13 @@ padding-top: 6px;
 .visitShop{
   color: rgb(250,254,254);
   font-size: 15px;
+  width: 150px;
 }
 .favouriteDiv{
   margin-left: 95px;
   margin-top: 8px;
+  display: flex;
+  flex-direction: column;
 }
 .footer{
   display: grid;
@@ -406,7 +408,7 @@ padding-top: 6px;
   width: 40px;
   height: 40px;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   right: 0;
   top: 0;
   display: none;
@@ -451,6 +453,7 @@ padding-top: 6px;
   margin-top: -1000px;
   transition: margin-top 0.5s ease;
   background-color: rgb(244,244,244);
+  z-index: 2;
 }
 .signUPbox:hover{
   background-color: rgb(236, 236, 236);
@@ -560,7 +563,6 @@ padding-top: 6px;
       z-index: 2;
 
     }
-    
     .rectangles{
       display: grid;
       grid-template-columns: repeat(2,1fr);
@@ -593,7 +595,7 @@ padding-top: 6px;
       width: 768px;
     }
     .Header{
-      padding-bottom: 290px;
+      padding-bottom: 250px;
     }
     .cart{
       padding-right: 30px;
@@ -636,19 +638,13 @@ padding-top: 6px;
     .thirdContainer{
       width: 768px;
     }
-    .kaktuses{
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: 145px;
-      width:500px;
-      height: 640px;
-    }
+    
     .FeaturedCheaper{
       width: 95%;
         margin-left: 20px;
     }
-    .kaktuses>div{
-      padding-bottom: 100px;
+    .kaktuses{
+      margin-bottom: 50px;
     }
     .rowContainerFeat>div{
       margin-top: -150px;
@@ -720,15 +716,23 @@ padding-top: 6px;
     .produk, .berlanggananDiv{
       margin-top:40px
     }
-    
+    .logo{
+      margin-left: 0px;
+      margin-top: 80px;
+    }
+    .rowContainer1{
+      padding-top: 10px;
+    }
+    .KFM{
+      color:white;
+    }
 }
 @media screen and (max-width: 320px){
   body, html{
     width: 320px;
   }
-  .Header{
-    position: absolute;
-    visibility: hidden;
+  .search, .cart, .signINbox, .signUPbox{
+    display: none;
   }
   .firstContainer, .cottonbro, .cottonDiv, .PrevNextButtons,
   .colContainer, .FeaturedCheaper, .kaktuses,
@@ -833,8 +837,9 @@ padding-top: 6px;
     padding-top: 12px;
   }
   .logo{
-    left: 20px;
-    top: 20px;
+    width: 100%;
+    margin-top: -140px;
+    margin-bottom: 95px;
   }
   .KembangFlowerMantap{
     font-size: 30px;
@@ -985,6 +990,9 @@ padding-top: 6px;
     font-size: 8px;
     padding: 0;
   }
+  .KFM{
+    color:white;
+  }
 }
 .slide-from-top {
   margin-top:-80px !important;
@@ -1048,11 +1056,11 @@ width: 80%;
 }
 .authorizationDiv{
   position: absolute;
-  width: 100%;
+  width: 500px;
   display: flex;
   align-items:center;
   justify-content: center;
-
+  margin-left: 500px;
   transition: margin-left 0.5s ease;
   margin-top: 100px;
 }
@@ -1110,7 +1118,7 @@ padding: 20px;
   justify-content: center;
   flex-direction: column;
   background-color:white;
-  width: 80%;
+  width: 100%;
   border-radius:50px;
   top:130px;
   padding-top: 50px;
@@ -1164,6 +1172,7 @@ padding: 20px;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 0;
   background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
@@ -1203,6 +1212,7 @@ input:checked + .slider:before {
   border-width: 2px;
   border-radius:20px;
   padding: 5px;
+  z-index: 0;
 }
 .authRegDiv{
   position: absolute;
@@ -1234,12 +1244,12 @@ width: 80%;
   display: flex;
   align-items:center;
   justify-content: center;
-  margin-left: -3000px;
+  margin-left: -4000px;
   transition: margin-left 0.5s ease;
   margin-top: 5px
 }
 .authorization{
-  width: 80%;
+  width: 100%;
   background-color:white;
   display: flex;
   align-items:center;
@@ -1330,9 +1340,131 @@ input[type="submit"] {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 0;
+  z-index: 1;
   overflow: hidden;
 }
 .bodyOverflow {
   overflow-y: hidden;
+}
+.container {
+  max-width: 500px;
+ 
+}
+
+#slid1, #slid2{
+  width: 50px;
+  border:none;
+  border-radius:10px;
+  padding: 5px;
+  font-size: 1.3em;
+}
+.map{
+  width: 50%;
+  height: 400px;
+}
+.mapDiv{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.formAuthoriz{
+  font-size: 0.5em;
+}
+.KFM{
+text-decoration: none;
+color: rgb(21, 105, 99);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  transition: background-color 0.5s ease;
+}
+#user{
+  display: none;
+}
+.logOut1{
+  display: none;
+  border:none;
+  background-color:transparent;
+  font-size: 1.3em;
+  width: 100%;
+  justify-content: center;
+}
+.logOut{
+  display: none;
+  border:none;
+  background-color:transparent;
+  font-size: 1.3em;
+}
+
+/* плеер */
+.new-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 500px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.image-container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  max-width: 200px; /* Измените значение на желаемый размер */
+  height: auto;
+  object-fit: cover;
+}
+.image-container img {
+  max-width: 200px; /* Измените значение на желаемый размер */
+  height: auto;
+}
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.button-container button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.button-container button:hover {
+  transform: scale(1.1);
+}
+
+.button-container button img {
+  width: 24px;
+  height: 24px;
+}
+.music{
+  display: flex;
+justify-content: center;
+margin-bottom: 50px;
 }

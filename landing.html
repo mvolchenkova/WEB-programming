@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="/icons8-растение-32.png">
   </head>
   <body>
-    <div class="authorizationDiv NunitoFont">
+    <div class="authorizationDiv heeboFont">
       <div class="authorization">
         <div class="exitDiv">
           <button class="exit2">
@@ -21,17 +21,17 @@
           </button>
         </div>
         <form class="formAuthoriz">
-          <b id="auth data-lang" data-lang="auth">Authorization</b>
+          <b class="data-lang auth" data-lang="authorization">Authorization</b>
           <div class="authLab">
-            <label id="label1 data-lang" data-lang="login">Login</label>
+            <label class="label1 data-lang" data-lang="login">Login</label>
             <input type="text" placeholder="Login" id="Logup">
-            <label id="label2 data-lang" data-lang="password">Password</label>
+            <label class="label2 data-lang" data-lang="password">Password</label>
             <input type="password" placeholder="Password" id="PasswordLog">
           </div>
-          <button class="loginButton NunitoFont data-lang" data-lang="logIn">Log In</button>
+          <button class="loginButton data-lang" data-lang="LogIn">Log In</button>
         </form>
       </div>
-</div>
+    </div>
 <div class="regDivBig">
   <div class="NunitoFont regDiv regR">
     <div class="exitDiv">
@@ -41,27 +41,28 @@
     </div>
     <div class="registration">
       <form id="formregistr">
-        <b class="NunitoFont regId data-lang" data-lang="registration">Registration</b>
+        <b class="heeboFont regId data-lang" data-lang="registration">Registration</b>
         <div class="formDiv2">
           <input type="text" placeholder="Surname">
           <input type="text" placeholder="Name">
           <input type="text" placeholder="Father Name">
-          <input type="text" placeholder="Mobile phone">
-          <input type="text" placeholder="E-mail">
+          <input type="text" placeholder="Mobile phone" id="phone">
+          <input type="text" placeholder="E-mail" id="email">
           <input type="text" placeholder="Birth date">
           <div style="display: flex; flex-direction: column;align-items:center">
-            <input type="text" placeholder="Username" style="">
-            <button onclick="generateNickname()" class="genBut data-lang" data-lang="generate">Generate username</button>
+            <input type="text" placeholder="Username" id="username">
+            <button class="genBut data-lang" data-lang="genBut">Generate username</button>
           </div>
-          <input type="text" placeholder="Create a password">
-          <input type="text" placeholder="Repeat a password">
+          <input type="password" placeholder="Create a password" id="pass1">
+          <input type="password" placeholder="Repeat a password" id="pass2">
         </div>
-        <label class="checkboxText NunitoFont">
-          <input type="checkbox" id="agreeCheckbox">
-          I agree to the <a href="privacy.html">terms of the user agreement</a>
+        <label class="checkboxText heeboFont">
+          <input type="checkbox" class="agreeCheckbox data-lang" data-lang="agree">
+          I agree to the <a href="../privacy/privacy.html" class="data-lang" data-lang="terms">terms of the user agreement</a>
         </label>
-        <button id="registrateBut data-lang" data-lang="create">Create account</button>
+        <button class="registrateBut data-lang" data-lang="regBut">Create account</button>
       </form>
+    </div>
   </div>
 </div>
 
@@ -69,20 +70,6 @@
     <div class="firstContainer">
       <div class="cottonDiv">
         <img src="cottonbro.png" class="cottonbro">
-        <div class="logo">
-          <img src="logo.svg" class="logoImg">
-          <select class="change-lang NunitoFont">
-            <option value="en" >EN</option>
-            <option value="ru" selected>RU</option>
-          </select>
-          <label class="switch">
-              <input type="checkbox" id="checkbox">
-              <span class="slider round"></span>
-          </label>
-          <button class="burgJS">
-            <img src="menu.png" class="burgermenuImg">
-          </button>
-        </div>
       </div>
       <div class="overlay">
 
@@ -90,7 +77,7 @@
         <div class="f1">
           <div class="burger">
             <div class="burgerSC">
-              <img src="search.svg" class="burgerImg">
+              <img src="search.svg" class="burgerImg" onclick="window.location.href='#thirdContainer'">
               <img src="cart.svg" class="burgerImg">
             </div>
             <div class="burgSign NunitoFont">
@@ -100,16 +87,39 @@
               <button class="burgText signInBut1 data-lang" data-lang="signIn">
                 Sign In
               </button>
+              <button class="logOut1 heeboFont data-lang" data-lang="logOut">Log Out</button>
+
             </div>
           </div>
-          <div class="Header">
+          <div>
+            <div class="logo">
+                <img src="logo.svg" class="logoImg">
+                <select class="change-lang NunitoFont">
+                  <option value="en" >EN</option>
+                  <option value="ru" selected>RU</option>
+                </select>
+                <label class="switch">
+                    <input type="checkbox" id="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <button class="burgJS">
+                  <img src="menu.png" class="burgermenuImg">
+                </button>
+              </div>
+              <div class="Header">
+            
             <div class="rowContainer1">
+              
               <div>
                 <img src="search.svg" class="search">
               </div>
               <div>
                 <img src="cart.svg" class="cart">
               </div>
+              <div id="user">
+
+              </div>
+              <button class="logOut heeboFont data-lang" data-lang="logOut">Log Out</button>
               <button class="signUPbox NunitoFont signBut">
                 <p class="signup  data-lang" data-lang="signUp1">Sign Up</p>
               </button>
@@ -118,11 +128,13 @@
               </button>
             </div>
           </div>
+          </div>
+          
           <div class="colContainer MontserratFont">
             <div class="KembangFlowerMantap">
-              <p data-lang="KFM" class=" data-lang">
+              <a href="#thirdContainer" data-lang="KFM" class=" data-lang KFM">
                 Kembang Flower Mantap
-              </p>
+              </a>
             </div>
             <div class="KembangLorem">
               <p class=" data-lang" data-lang="KFML">
@@ -224,11 +236,13 @@
           </div>
         </div>
       </div>
-      <div class="thirdContainer">
+      <div class="thirdContainer" id="thirdContainer">
         <div class="FeaturedCheaper MontserratFont rowContainerFeat">
           <p class="featPlants data-lang" data-lang="feat">
             Featured Plants
           </p>
+          <button id="slid1"><</button>
+          <button id="slid2">></button>
           <div class="rowContainerFeat cheaperFirstBorder cheap">
             <p style="font-size: 12px;" class=" data-lang" data-lang="cheap">
               Cheaper First
@@ -236,64 +250,107 @@
             <img src="downArrow.svg" class="downArrow">
           </div>
         </div>
-        <div class="kaktuses">
-          <div>
-            <img src="kaktusPlants.svg" class="kaktusImg">
-            <div class="MontserratFont kaktusText land">
-              <p class=" data-lang" data-lang="kaktus1">
-                Kaktus Plants
-              </p>
-              <p style="font-weight: 600">
-                IDR 85.000
-              </p>
-            </div>
-          </div>
-          <div>
-            <img src="landakPlants.svg" class="kaktusImg">
-            <div class="MontserratFont kaktusText land">
-              <p data-lang="landak" class=" data-lang">
-                Landak Plants
-              </p>
-              <p style="font-weight: 600">
-                IDR 105.000
-              </p>
-            </div>
-          </div>
-          <div>
-            <img src="kekubungPlants1.svg" class="kaktusImg">
-            <div class="MontserratFont kaktusText kecu">
-              <p  data-lang="kecub" class=" data-lang">
-                Kecubung Plants
-              </p>
-              <p style="font-weight: 600">
-                IDR 85.000
-              </p>
-            </div>
-          </div>
-          <div>
-            <img src="kekubungPlants2.svg" class="kaktusImg">
-            <div class="MontserratFont kaktusText kecu">
-              <p  data-lang="kecub1" class=" data-lang">
-                Kecubung Plants
-              </p>
-              <p style="font-weight: 600">
-                IDR 85.000
-              </p>
-            </div>
-          </div>
-          <div>
-            <img src="kekubungPlants3.svg"class="kecu2Img">
-            <div class="MontserratFont kaktusText kecubung2">
-              <p style="font-weight: 400;" class=" data-lang" data-lang="kecub2">
-                Kecubung Plants
-              </p>
-              <p style="font-weight: 600">
-                IDR 85.000
-              </p>
-            </div>            
-          </div>
-        </div>
-      </div>
+              <div class="kaktuses">
+                <div class="item">
+                  <img src="kaktusPlants.svg" class="kaktusImg">
+                  <div class="MontserratFont kaktusText land">
+                    <p class=" data-lang" data-lang="kaktus1">
+                      Kaktus Plants
+                    </p>
+                    <p style="font-weight: 600">
+                      IDR 85.000
+                    </p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="landakPlants.svg" class="kaktusImg">
+                  <div class="MontserratFont kaktusText land">
+                    <p data-lang="landak" class=" data-lang">
+                      Landak Plants
+                    </p>
+                    <p style="font-weight: 600">
+                      IDR 105.000
+                    </p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="kekubungPlants1.svg" class="kaktusImg">
+                  <div class="MontserratFont kaktusText kecu">
+                    <p data-lang="kecub" class=" data-lang">
+                      Kecubung Plants
+                    </p>
+                    <p style="font-weight: 600">
+                      IDR 85.000
+                    </p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="kaktusPlants.svg" class="kaktusImg">
+                  <div class="MontserratFont kaktusText kecu">
+                    <p  data-lang="kecub1" class=" data-lang">
+                      Kecubung Plants
+                    </p>
+                    <p style="font-weight: 600">
+                      IDR 85.000
+                    </p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="kekubungPlants3.svg" class="kecu2Img">
+                  <div class="MontserratFont kaktusText kecubung2">
+                    <p style="font-weight: 400;" class=" data-lang" data-lang="kecub2">
+                      Kecubung Plants
+                    </p>
+                    <p style="font-weight: 600">
+                      IDR 85.000
+                    </p>
+                  </div>            
+                </div>
+                <div class="item">
+                  <img src="kaktusPlants.svg" class="kaktusImg">
+                  <div class="MontserratFont kaktusText land">
+                    <p data-lang="landak" class=" data-lang">
+                      Kecubung Plants
+                    </p>
+                    <p style="font-weight: 600">
+                      IDR 85.000
+                    </p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="landakPlants.svg" class="kaktusImg">
+                  <div class="MontserratFont kaktusText land">
+                    <p data-lang="landak" class=" data-lang">
+                      Landak Plants
+                    </p>
+                    <p style="font-weight: 600">
+                      IDR 105.000
+                    </p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="kekubungPlants3.svg" class="kecu2Img">            
+                  <div class="MontserratFont kaktusText land">
+                    <p data-lang="landak" class="data-lang">
+                      Kecubung Plants
+                    </p>
+                    <p style="font-weight: 600">
+                      IDR 85.000
+                    </p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="kekubungPlants1.svg" class="kaktusImg">
+                  <div class="MontserratFont kaktusText land">
+                    <p data-lang="landak" class=" data-lang">
+                      Kecubung Plants
+                    </p>
+                    <p style="font-weight: 600">
+                      IDR 105.000
+                    </p>
+                  </div>
+                </div>
+              </div>
       <div class="rowContainerFeat">
         <div class="MontserratFont">
           <p class="buyMore data-lang" data-lang="buyMore">
@@ -317,13 +374,11 @@
         <div class="rowContainerFeat">
           <div>
             <div class="MontserratFont favouriteDiv">
-              <p class="favourite data-lang" data-lang="fav">
+              <a href="#thirdContainer" class="favourite data-lang KFM" data-lang="fav">
                 Get your favourites plant on our shop now
-              </p>
-              <button class="visitButton">
-                <p class="visitShop NunitoFont data-lang" data-lang="visit">
+              </a>
+              <button class="visitShop NunitoFont data-lang visitButton" data-lang="visit">
                   Visit Shop
-                </p>
               </button>
             </div>
           </div>
@@ -332,6 +387,31 @@
           </div>
         </div>
       </div>
+      <div class="mapDiv">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d285.82854865494033!2d30.048405678398247!3d53.9797320394495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1715112478457!5m2!1sru!2sby" class="map" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="music">
+        <div class="new-div">
+          <div class="image-container">
+            <img src="" alt="Random Image" class="random-image">
+          </div>
+          <audio src="" class="audio-element"></audio>
+          <div class="button-container">
+            <button class="prev-btn">
+              <img src="icons8-шеврон-30 (1).png" alt="Previous" class="prev-icon">
+            </button>
+      
+            <button class="play-pause-btn">
+              <img src="icons8-воспроизведение-32.png" alt="Play/Pause" class="play-pause-icon">
+            </button>
+      
+            <button class="next-btn">
+              <img src="icons8-шеврон-30.png" alt="Next" class="next-icon">
+            </button>
+          </div>
+        </div>
+      </div>
+     
       <footer>
         <div class="footer">
           <div>
@@ -396,6 +476,6 @@
         </div>
       </footer>
       <script src="lab6.js"></script>
-    </body>
+        </body>
   </html>
     

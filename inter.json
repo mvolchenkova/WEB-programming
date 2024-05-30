@@ -4,7 +4,7 @@
         "auth":"Authorization",
         "login":"Login",
         "password":"Password",
-        "logIn":"Log In",
+        "LogIn":"Log In",
         "registration":"Registration",
         "signUp":"Sign Up",
         "signIn":"Sign In",
@@ -38,18 +38,22 @@
         "address":"Jl. Laksda Adisucipto No.51, Demangan, Kec. Depok, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55282",
         "berl":"Berlangganan Email Kami",
         "masEmail":"Masukan Alamat Email",
-        "submit":"Submit"
+        "submit":"Submit",
+        "generate":"Generate",
+        "authorization":"Authorization",
+        "logOut":"Log Out"
     },
     "ru":{
         "title": "Цветочный магазин",
         "auth":"Авторизация",
         "login":"Логин",
         "password":"Пароль",
-        "logIn":"Войти",
+        "LogIn":"Войти",
         "registration":"Регистрация",
+        "authorization":"Авторизация",
         "signUp":"Регистрация",
         "signIn":"Войти",
-        "signUp1":"Регистрация",
+        "signUp1":"Регистр",
         "signIn1":"Войти",
         "KFM":"Цветочный магазин",
         "KFML":"Lorem Ipsum — это просто текст-пустышка полиграфической и наборной индустрии. Lorem Ipsum является стандартным текстом-пустышкой в ​​отрасли с 1500-х годов. ",
@@ -79,6 +83,9 @@
         "address":"Джл. Laksda Addisucipto No.51, Деманган, Кеч. Депок, Кота Джокьякарта, Даэра Истимева Джокьякарта 55282",
         "berl":"Берланганан Ками e-mail",
         "masEmail":"Масукан Аламат e-mail",
-        "submit":"Подписаться"
+        "submit":"Подписаться",
+        "generate":"Гененировать",
+        "logOut":"Выйти"
+
     }
 }
