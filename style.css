@@ -7,6 +7,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 body,html{
 width: 1280px;
+overflow-x: hidden;
 }
 .firstContainer{
   display: flex;
@@ -16,7 +17,7 @@ width: 1280px;
   align-items: center;
   justify-content: end;
   margin-right: 50px;
-  padding-top: 40px;
+  margin-top: -37px;
 }
 .rowContainer {
   display: flex;
@@ -37,10 +38,13 @@ width: 1280px;
   z-index: -1;
 }
 .logo {
-  position: absolute;
   padding-left: 57px;
-  top: 40px;
-
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  width: 280px;
+ 
+  justify-content: space-between;
 }
 .search {
   width: 18px;
@@ -106,7 +110,7 @@ font-style: normal;
 .KembangFlowerMantap{
   width: 91%;
   font-size: 69.5px;
-  color: rgb(21, 105, 99)
+  color: rgb(21, 105, 99);
 }
 .KembangLorem{
   line-height: 33px;
@@ -201,7 +205,7 @@ font-style: normal;
   padding-top: 3px;
 }
 .delivPlantPriceText{
-  padding-right: 70px;
+  padding-right: 50px;
 }
 .delivery{
   padding-right: 100px;
@@ -228,13 +232,11 @@ font-style: normal;
 }
 .cheaperFirstBorder{
   border: 1px solid rgb(224,224,224);
-  padding: 8px 12px 8px 12px
+  padding: 8px 12px 8px 12px;
 }
 .kaktuses{
-  display: grid;
+  display: flex;
   width:  85%;
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: repeat(1,1fr);
   margin-left: 40px;
   margin-top: 25px;
   column-gap: 25px;
@@ -253,6 +255,15 @@ font-style: normal;
   padding-left: 2px;
   line-height: 28px;
 }
+.kecubung2{
+padding-top: 6px;
+}
+.kecu{
+    font-weight: 400;margin-top: -8px;
+  }
+  .land{
+    font-weight: 400;padding-top: 10px;
+  }
 .buyMore{
   font-size: 40px;
   font-weight: bold;
@@ -278,13 +289,16 @@ font-style: normal;
   height: 251px;
   padding-left: 62px;
   padding-top: 77px;
+  animation:opacity 8s infinite;
 }
 .fifthContainer{
-  background-color: rgb(243,244,246);
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 76px;
   margin-bottom: 50px;
+  background: linear-gradient(-45deg,  rgb(243,244,246),  rgb(161, 212, 204),  rgb(102, 139, 134));
+	animation: fifthContainer 10s ease infinite;
+  background-size: 100% 100%;
 }
 .favourite{
   font-size: 40px;
@@ -304,10 +318,13 @@ font-style: normal;
 .visitShop{
   color: rgb(250,254,254);
   font-size: 15px;
+  width: 150px;
 }
 .favouriteDiv{
   margin-left: 95px;
   margin-top: 8px;
+  display: flex;
+  flex-direction: column;
 }
 .footer{
   display: grid;
@@ -388,14 +405,56 @@ font-style: normal;
   padding: 6px 16px;
 }
 .burgermenu{
-  visibility: hidden;
   width: 40px;
   height: 40px;
   position: absolute;
-  left: 0;
+  z-index: 2;
+  right: 0;
   top: 0;
+  display: none;
+  align-items:center;
+  justify-content:center ;
+  flex-direction: column;
 }
-
+.burgerSC{
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  justify-content:space-around;
+  padding-bottom: 30px;
+}
+.burgerImg{
+  width: 20px;
+  height: 20px;
+}
+.burgText{
+ background-color: rgb(229,229,229);
+ margin: 5px;
+ border-radius: 20px;
+ padding: 10px 0;
+ width: 217px;
+ border: none;
+  box-shadow: none;
+}
+.burgSign{
+ text-align: center;
+ width: 250px;
+ font-size: 14;
+ font-weight: bold;
+}
+.burger{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-around;
+  position: absolute;
+  width: 320px;
+  padding: 40px 0px;
+  margin-top: -1000px;
+  transition: margin-top 0.5s ease;
+  background-color: rgb(244,244,244);
+  z-index: 2;
+}
 .signUPbox:hover{
   background-color: rgb(236, 236, 236);
   transition: 0.2s;
@@ -427,10 +486,70 @@ font-style: normal;
   background-color: rgb(17, 87, 81);
   transition: 0.5s;
 }
-.kaktusImg:hover, .kecubung2:hover{
+.kaktusImg:hover, .kecu2Img:hover{
   transition: 0.4s;
-  transform:scale(1.15);
+  transform:scale(1.1);
 }
+.plant5{
+  animation: slide 8s infinite;
+}
+.burgermenuImg{
+  display: none;
+  z-index: 20;
+}
+@keyframes slide{
+  0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translateX(40px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+@keyframes opacity{
+  0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes KembangFlowerMantap {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes KembangLorem {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.KembangFlowerMantap, .KembangLorem {
+  animation: KembangFlowerMantap 2s;
+}
+@keyframes fifthContainer {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 @media screen and (max-width: 768px){
     body, html{
@@ -439,6 +558,10 @@ font-style: normal;
     .burgermenuImg{
       width: 1px;
       height: 1px;
+    }
+    .burgJS{
+      z-index: 2;
+
     }
     .rectangles{
       display: grid;
@@ -472,7 +595,7 @@ font-style: normal;
       width: 768px;
     }
     .Header{
-      padding-bottom: 290px;
+      padding-bottom: 250px;
     }
     .cart{
       padding-right: 30px;
@@ -498,32 +621,36 @@ font-style: normal;
     .rectLorem{
       font-size: 11px;
     }
-    .rect>.rowContainer{
-      width:235px;
+    .rectangles{
+      width: 600px;
+      justify-items: center;
+      margin-left: 79px;
+    }
+    .rect{
+      width:257px;
     }
     .kecubung2{
       display: none;
     }
-
+    .kaktusText{
+      padding-top: 18PX;
+    }
     .thirdContainer{
       width: 768px;
     }
-    .kaktuses{
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: 145px;
-      width:500px;
-      height: 640px;
-    }
+    
     .FeaturedCheaper{
       width: 95%;
         margin-left: 20px;
     }
-    .kaktuses>div{
-      padding-bottom: 100px;
+    .kaktuses{
+      margin-bottom: 50px;
     }
     .rowContainerFeat>div{
       margin-top: -150px;
+    }
+    .kecu2Img{
+      visibility: hidden;
     }
     .cheap{
       margin-bottom: -150px;
@@ -589,15 +716,23 @@ font-style: normal;
     .produk, .berlanggananDiv{
       margin-top:40px
     }
-    
+    .logo{
+      margin-left: 0px;
+      margin-top: 80px;
+    }
+    .rowContainer1{
+      padding-top: 10px;
+    }
+    .KFM{
+      color:white;
+    }
 }
 @media screen and (max-width: 320px){
   body, html{
     width: 320px;
   }
-  .Header{
-    position: absolute;
-    visibility: hidden;
+  .search, .cart, .signINbox, .signUPbox{
+    display: none;
   }
   .firstContainer, .cottonbro, .cottonDiv, .PrevNextButtons,
   .colContainer, .FeaturedCheaper, .kaktuses,
@@ -610,6 +745,9 @@ font-style: normal;
   }
   .plantOnATableDiv>img{
     width: 320px;
+  }
+  .burgermenu{
+    display: flex;
   }
   .buyMore, .buyMoreLorem, .plantOnATableDiv, .KembangLorem,
   .footer, .previousButton, div>.logo, .Header, .perusahaan {
@@ -629,14 +767,16 @@ font-style: normal;
   .kaktuses{
     grid-template-columns: repeat(2,0.5fr);
     grid-template-rows: (repeat(2,0.5fr));
-    width: 320px;
+    width: 310px;
     height: 470px;
-    margin: 0;
+    margin: 0 0 0 10px;
+    column-gap:10px
   }
 
   .kaktuses > div{
     width: 40%;
     padding-bottom: 10px;
+    row-gap: 10px;
     margin-left: 7px;
     padding-top: 10px;
   }
@@ -660,10 +800,13 @@ font-style: normal;
   }
   .kaktusText{
     width: 130px;
-    padding-left: 10px;
+    padding: 0 0 0 10px;
+    margin-bottom: 40px;
+    line-height: 22px;
   }
   div>.kaktusImg{
     width: 150px;
+    justify-content: space-around;
   }
   .kaktus, .rahasia{
     font-size: 20px;
@@ -675,7 +818,7 @@ font-style: normal;
   }
   .next{
     margin-left: 0;
-    padding-left: 8px;
+    padding-left: 0px;
   }
   .previous{
     margin-left: 8px;
@@ -694,8 +837,9 @@ font-style: normal;
     padding-top: 12px;
   }
   .logo{
-    left: 20px;
-    top: 20px;
+    width: 100%;
+    margin-top: -140px;
+    margin-bottom: 95px;
   }
   .KembangFlowerMantap{
     font-size: 30px;
@@ -716,8 +860,7 @@ font-style: normal;
   }
   .burgermenu{
     visibility: visible;
-    
-    left: auto;
+    padding-left: 260px;
     right: 20px;
     top: 20px;
   }
@@ -756,17 +899,25 @@ font-style: normal;
    width: 90%;
    margin-left: 18px;
    margin-right: 0;
+   margin-top: -8px;
   }
   .thirdContainer{
     margin-top: 20px;
   }
+  .kecu{
+    font-weight: 400;margin-top: -8px;
+  }
+  .land{
+    font-weight: 400;padding-top: 0;
+  }
   .buyMore{
     font-size: 26px;
-    line-height: 34px;
+    line-height: 32px;
+    margin-top: -55px;
   }
   .buyMoreLorem{
     font-size: 14px;
-    line-height: 20px;
+    line-height: 16px;
     margin-bottom: 20px;
     padding: 20px;
     width: 85%
@@ -788,33 +939,532 @@ font-style: normal;
     margin-bottom: 30px;
   }
   .favouriteDiv{
-    padding: 25px -15px 25px 25px;
+    margin: 25px -15px 35px 0px;
     width: 100%;
   }
   .plantkuLogo, .plantkuHouse, .plantkuHouseText{
     padding-left: 20px;
   }
   .plantkuHouseText{
-    padding-right: 20px;
+    padding-right: 15px;
   }
   .perusahaanDiv, .produk{
     padding-left: 20px;
     margin-top: 20px;
     line-height: 30px;
   }
+  .plantkuHouse{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   .berlanggananDiv{
     padding-left: 20px;
-    margin-top: 20px;
+    margin-top: 45px;
     padding-bottom: 30px;
+  }
+  .berlanggananEmail{
+    padding-top: 10px;
   }
   .plantOnATableDiv{
     height: 200px;
   }
     .plantkuLogo{
-      padding-top: 30px;
+      font-size: 26px;
     }
   .masukanEmail{
-    width: 162px;
-    padding-left: 30  px;
+    width: 215px;
+    padding-left: 10px;
   }
+  .perusahaanDiv{
+    line-height: 22px;
+  }
+  .produk{
+    margin-top: 16px;
+    line-height: 18px;
+  }
+  .submit{
+    width: 50px;
+    height: 20px;
+  }
+  .submitText{
+    font-size: 8px;
+    padding: 0;
+  }
+  .KFM{
+    color:white;
+  }
+}
+.slide-from-top {
+  margin-top:-80px !important;
+}
+.burgJS{
+  background-color:transparent;
+  border:none;
+}
+.registr{
+  margin-top: 50px;
+  border:none;
+  border-radius:30px;
+  width: 100%;
+  height: 150px;
+  font-size: 3.5em;
+}
+.registration{
+  padding-bottom: 30px;
+  font-weight: bolder;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  
+}
+#formregistr{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#formregistr>b{
+  padding-bottom: 0;
+}
+#formregistr>p{
+  padding-bottom: 20px;
+  font-size: 1.3em;
+  width: 80%;
+  text-align: center;
+}
+.authRegDiv{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: -2000px;
+  transition: margin-left 0.5s ease;
+  
+}
+.authReg{
+width: 80%;
+  background-color:white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius:50px;
+  padding-bottom:50px;
+  padding-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.authorizationDiv{
+  position: absolute;
+  width: 500px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-left: 500px;
+  transition: margin-left 0.5s ease;
+  margin-top: 100px;
+}
+.authorization{
+  background-color:white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius:50px;
+  padding-bottom:50px;
+  margin-top: 150px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.formAuthoriz{
+display: flex;
+align-items:center;
+justify-content: center;
+flex-direction: column;
+}
+.authLab{
+display: flex;
+align-items:center;
+justify-content: center;
+flex-direction: column;
+}
+.authLab>label{
+font-size: 2.2em;
+}
+form>b{
+font-size: 3em;
+padding: 20px;
+}
+
+.formDiv2{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:90%;
+}
+.burgerDiv{
+  position: absolute;
+  margin-top: -1000px;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content:center ;
+  transition: margin-top 0.5s ease;
+}
+.regDiv{
+  position: absolute;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  background-color:white;
+  width: 100%;
+  border-radius:50px;
+  top:130px;
+  padding-top: 50px;
+  margin-left: -4000px;
+  transition: margin-left 0.5s ease;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.regDivBig{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.formreg{
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  width: 100%;
+}
+#agreeCheckbox {
+  width: 30px;
+  height: 30px;
+}
+.checkboxText{
+  font-size: 1.6em;
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  content: url("../sun.svg");
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(37,147,133);
+
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(37,147,133);
+}
+input:checked + .slider:before {
+  content: url("../moon.png");
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.change-lang{
+  width: 60px;
+  height: 30px;
+  font-weight: bold;
+  border-width: 2px;
+  border-radius:20px;
+  padding: 5px;
+  z-index: 0;
+}
+.authRegDiv{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: -2000px;
+  transition: margin-left 0.5s ease;
+  
+}
+.authReg{
+width: 80%;
+  background-color:white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius:50px;
+  padding-bottom:50px;
+  padding-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.authorizationDiv{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-left: -4000px;
+  transition: margin-left 0.5s ease;
+  margin-top: 5px
+}
+.authorization{
+  width: 100%;
+  background-color:white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius:50px;
+  padding-bottom:50px;
+  padding-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.formAuthoriz{
+display: flex;
+align-items:center;
+justify-content: center;
+flex-direction: column;
+}
+.authLab{
+display: flex;
+align-items:center;
+justify-content: center;
+flex-direction: column;
+}
+.authLab>label{
+font-size: 2.2em;
+}
+.authRegDiv{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: -2000px;
+  transition: margin-left 0.5s ease;
+  
+}
+.authReg{
+width: 80%;
+  background-color:white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius:50px;
+  padding-bottom:50px;
+  padding-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.slide-from-left {
+  margin-left:350px !important;
+}
+.exit3, .exit2{
+  border:none;
+  background-color:transparent;
+  color:red;
+  font-size: 2em;
+}
+.regId, .checkboxText, #auth,
+#label1, #label2{
+  font-size: 1.5em;
+}
+.checkboxText{
+  width: 80%;
+}
+input[type="text"],
+input[type="password"]{
+  width: 80%;
+  margin: 20px 0 20px 0;
+  font-size: 1.3em;
+  border-width:2px;
+  border-radius:15px;
+  padding: 0 10px 0 10px;
+}
+
+input[type="submit"] {
+  width: 30%;
+  font-size: 3em;
+  border:none;
+  border-radius:30px;
+  padding: 10px;
+}
+.overlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  overflow: hidden;
+}
+.bodyOverflow {
+  overflow-y: hidden;
+}
+.container {
+  max-width: 500px;
+ 
+}
+
+#slid1, #slid2{
+  width: 50px;
+  border:none;
+  border-radius:10px;
+  padding: 5px;
+  font-size: 1.3em;
+}
+.map{
+  width: 50%;
+  height: 400px;
+}
+.mapDiv{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.formAuthoriz{
+  font-size: 0.5em;
+}
+.KFM{
+text-decoration: none;
+color: rgb(21, 105, 99);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  transition: background-color 0.5s ease;
+}
+#user{
+  display: none;
+}
+.logOut1{
+  display: none;
+  border:none;
+  background-color:transparent;
+  font-size: 1.3em;
+  width: 100%;
+  justify-content: center;
+}
+.logOut{
+  display: none;
+  border:none;
+  background-color:transparent;
+  font-size: 1.3em;
+}
+
+/* плеер */
+.new-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 500px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.image-container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  max-width: 200px; /* Измените значение на желаемый размер */
+  height: auto;
+  object-fit: cover;
+}
+.image-container img {
+  max-width: 200px; /* Измените значение на желаемый размер */
+  height: auto;
+}
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.button-container button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.button-container button:hover {
+  transform: scale(1.1);
+}
+
+.button-container button img {
+  width: 24px;
+  height: 24px;
+}
+.music{
+  display: flex;
+justify-content: center;
+margin-bottom: 50px;
 }
