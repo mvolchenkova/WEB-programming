@@ -1,46 +1,47 @@
 [
     {
+        "surname":"Volchenkova",
+        "name":"Maria",
+        "phone":"+375291399052",
+        "email":"mvolchenkova7@gmail.com",
+        "birthDate":"24.01.2005",
         "login": "horny",
         "password": "HHoorn.yyy7"
     },
     {
+        "surname":"Khutsaidze",
+        "name":"Elizaveta",
+        "phone":"+375335467364",
+        "email":"keannieau@gmail.com",
+        "birthDate":"26.10.2003",
         "login": "keannieau",
         "password": "Keann.ux7"
     },
     {
+        "surname":"admin",
+        "name":"adminn",
+        "phone":"+375447635546",
+        "email":"sdfghj@gmail.com",
+        "birthDate":"14.05.2000",
         "login": "admin",
         "password": "Admin.istrator7"
     },
     {
+        "surname":"dfghjk",
+        "name":"dfghj",
+        "phone":"+375446578274",
+        "email":"wertyu@gmail.com",
+        "birthDate":"12.12.2009",
         "login": "sjkfhsjd",
         "password": "sjkfsdffie3.S"
     },
     {
+        "surname":"23456",
+        "name":"dfghj",
+        "phone":"+375440987654",
+        "email":"werghjk@gmail.com",
+        "birthDate":"12.12.2009",
         "login": "fnvdkvdbv",
         "password": "KJG.efejfe5"
-    },
-    {
-        "login": "dkhsdkdu",
-        "password": "YDKkdfge84h;"
-    },
-    {
-        "login": "dklhfldld",
-        "password": "FDjusd9fsl/"
-    },
-    {
-        "login": "sdkfhlhf",
-        "password": "zskchillhL0/"
-    },
-    {
-        "login": "dklzldc",
-        "password": ":KLIsgd9skd."
-    },
-    {
-        "login": "dnflskfsk",
-        "password": "?j;haidhiegf8"
-    },
-    {
-        "login": "xvklhsioe",
-        "password": "?ioshsofesg9"
     }
 ]
