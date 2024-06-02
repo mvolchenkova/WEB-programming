@@ -266,6 +266,9 @@ function removeErrorMessage(input) {
 registrateBut.addEventListener('click', function(){
   let pass1 = document.getElementById('pass1').value;
   let pass2 = document.getElementById('pass2').value;
+  let surname = document.getElementById('surname').value;
+  let name = document.getElementById('name');
+  let date = document.getElementById('date');
   let username = document.getElementById('username').value;
   const validationMessage = validatePassword(pass1); 
   if(validationMessage){
@@ -280,6 +283,48 @@ registrateBut.addEventListener('click', function(){
   agreeCheck(agreeCheckbox)===true){
     localStorage.setItem('isAuthenticated', 'true');
     localStorage.setItem('userName', username);
+    localStorage.setItem('surname', surname);
+    localStorage.setItem('name', name);
+    localStorage.setItem('date', date);
+    localStorage.setItem('email', email);
+    localStorage.setItem('phone', phone);
+    localStorage.setItem('password', pass1);
+
+    //запись в файл
+    // Получаем данные из localStorage
+let username1 = localStorage.getItem('userName');
+let surname1 = localStorage.getItem('surname');
+let name1 = localStorage.getItem('name');
+let date1 = localStorage.getItem('date');
+let email1 = localStorage.getItem('email');
+let phone1 = localStorage.getItem('phone');
+let password1 = localStorage.getItem('password');
+
+// Создаем объект с необходимым форматом
+const loginData = {
+  surname: surname1,
+  name: name1,
+  phone: phone1,
+  email: email1,
+  birthDate: date1,
+  login: username1,
+  password: password1
+};
+
+// Записываем данные в файл logins.json
+fetch('logins.json', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(loginData)
+})
+.then(response => {
+  console.log('Данные успешно записаны в файл logins.json');
+})
+.catch(error => {
+  console.error('Ошибка при записи данных в файл logins.json:', error);
+});
     window.location = 'landing.html';
   }
 });

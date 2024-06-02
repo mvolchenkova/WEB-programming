@@ -41,7 +41,9 @@
         "submit":"Submit",
         "generate":"Generate",
         "authorization":"Authorization",
-        "logOut":"Log Out"
+        "logOut":"Log Out",
+        "regBut":"Create Account",
+        "genBut":"Generate"
     },
     "ru":{
         "title": "Цветочный магазин",
@@ -85,7 +87,8 @@
         "masEmail":"Масукан Аламат e-mail",
         "submit":"Подписаться",
         "generate":"Гененировать",
-        "logOut":"Выйти"
-
+        "logOut":"Выйти",
+        "regBut":"Создать аккаунт",
+        "genBut":"Гененировать"
     }
 }
