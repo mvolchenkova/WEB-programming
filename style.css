@@ -5,16 +5,26 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   font: inherit;
 }
+body,html{
+width: 1280px;
+overflow-x: hidden;
+}
 .firstContainer{
   display: flex;
+}
+.rowContainer1 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 50px;
+  margin-top: -37px;
 }
 .rowContainer {
   display: flex;
   align-items: center;
   justify-content: end;
-  margin-right: 35px;
+  margin-right: 35x;
 }
-
 .colContainer {
   display: flex;
   align-items: center;
@@ -23,18 +33,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   margin-left: 50px;
 }
 .cottonbro {
-  position: relative;
-  width: 48.5vw;
-  height: auto;
+  width: 608px;
+  height: 740px;
   z-index: -1;
 }
 .logo {
-  position: absolute;
   padding-left: 57px;
-  top: 40px;
-  left: 0;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  width: 280px;
+ 
+  justify-content: space-between;
 }
-
 .search {
   width: 18px;
   height: 18px;
@@ -45,25 +56,39 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   height: 23px;
   margin-right: 8px;
 }
-.Header {
-  margin-top: 40px;
-}
+
 .signUPbox {
-  width:9vw;
-  height: 3vw;
+  width:auto;
+  height: auto;
+  padding: 8px 28px;
   display: flex;
+  box-shadow: none;
+  border:none;
   align-items: center;
   justify-content: center;
+  background-color: white;
+}
+.signup{
+  font-size: 14px;
   color:rgb(21, 105, 99);
 }
+.signin{
+  font-size: 14px;
+}
 .signINbox {
-  width:9vw;
-  height: 3vw;
+  width:108.89px;
+  height: auto;
+  padding: 8px 28px;
   display: flex;
+  box-shadow: none;
+  border: none;
   align-items: center;
   justify-content: center;
   color: white;
   background-color: rgb(21, 105, 99);
+}
+.featPlants{
+  font-size: 20px;
 }
 .NunitoFont{
   font-family: "Nunito", sans-serif;
@@ -84,24 +109,28 @@ font-style: normal;
 }
 .KembangFlowerMantap{
   width: 91%;
+  font-size: 69.5px;
+  color: rgb(21, 105, 99);
 }
 .KembangLorem{
   line-height: 33px;
   margin-top: 23px;
   margin-left: 30px;
   padding-right: 130px;
+  color: rgb(44,21,0); 
+  font-size: 18px; 
+  font-weight: 400;
 }
 .PrevNextButtons {
   display: flex;
   margin-top: 77px;
-  right: 0px;
   padding-right: 0px;
 }
 .previousButton{
   border: none;
   box-shadow: none;
-  height: 12.5vw;
-  width: 24vw;
+  height: 160px;
+  width: 310px;
   background-color: white;
   display: flex;
   align-items:center;
@@ -112,14 +141,14 @@ font-style: normal;
   background-color:rgb(21, 105, 99);
   border: none;
   box-shadow: none;
-  height: 12.5vw;
-  width: 24vw;
+  height: 160px;
+  width: 310px;
   padding-right: 0px;
   padding-left: 0px;
 }
 .previous{
   color: rgb(51,51,51);
-  font-size: 2vw;
+  font-size: 26px;
   margin-left: 15px;
 }
 .rowArrow{
@@ -127,14 +156,14 @@ font-style: normal;
   align-items:center ;
 }
 .kaktus{
-  font-size: 2.5vw;
+  font-size: 32px;
   color:rgb(21, 105, 99);
   padding-left: 5px;
   padding-top: 14px;
 }
 .next{
   color: rgb(242,242,242); 
-  font-size: 2vw;
+  font-size: 26px;
   margin-left: 50px;
 }
 .rightArrow{
@@ -142,9 +171,8 @@ font-style: normal;
 }
 .rahasia{
   color: rgb(242,242,242); 
-  font-size: 2.5vw;
+  font-size: 32px;
   padding-top: 15px;
-  padding-left: 20px;
 }
 .rect{
   border: 1px solid rgb(224,224,224);
@@ -156,12 +184,12 @@ font-style: normal;
 .rectangles{
   display: flex;
   justify-content: space-between;
-  margin-left: 40px;
+  margin-left: 16px;
   margin-right: 16px;
   margin-top: 130px;
 }
 .rectLorem{
-  font-size: 0.7vw;
+  font-size: 9px;
   font-weight: 400;
   line-height: 14px;
   padding-top:16px;
@@ -170,21 +198,27 @@ font-style: normal;
 }
 .rectName{
   color:rgb(21, 105, 99);
-  font-size: 1.25vw;
+  font-size: 17px;
   font-weight: bold;
   padding-left: 18px;
   line-height: 24px;
   padding-top: 3px;
 }
 .delivPlantPriceText{
-  padding-right: 47px;
+  padding-right: 50px;
+}
+.delivery{
+  padding-right: 100px;
+}
+.customer{
+  padding-right: 20px;
 }
 .thirdContainer{
   margin-top: 65px;
 }
 .FeaturedCheaper{
   justify-content: space-between;
-  margin: 0px 34px 0 58px;
+  margin: 0px 40px 0 40px;
   padding-top:3px;
   padding-bottom: 15px;
   border-bottom: 1px solid rgb(224,224,224);
@@ -198,20 +232,18 @@ font-style: normal;
 }
 .cheaperFirstBorder{
   border: 1px solid rgb(224,224,224);
-  padding: 8px 12px 8px 12px
+  padding: 8px 12px 8px 12px;
 }
 .kaktuses{
-  display: grid;
+  display: flex;
   width:  85%;
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: repeat(1,1fr);
-  margin-left: 55px;
+  margin-left: 40px;
   margin-top: 25px;
   column-gap: 25px;
 }
 .kaktuses > div{
-  width: 17vw;
-  height: 17vw;
+  width: 219px;
+  height: 219px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -223,37 +255,50 @@ font-style: normal;
   padding-left: 2px;
   line-height: 28px;
 }
+.kecubung2{
+padding-top: 6px;
+}
+.kecu{
+    font-weight: 400;margin-top: -8px;
+  }
+  .land{
+    font-weight: 400;padding-top: 10px;
+  }
 .buyMore{
-  font-size: 3.11vw;
+  font-size: 40px;
   font-weight: bold;
   letter-spacing: 0.5px;
   padding-left: 80px;
   padding-right:140px;
   line-height: 58px;
-  padding-top: 150px;
 }
 .plantsOnAWall{
-  width: 41vw;
-  padding-top: 148px;
   padding-right: 32px;
+  padding-top: 20px;
+  width: 590px;
+  height: 920px;
 }
 .buyMoreLorem{
   padding-left: 80px;
   padding-right: 126px;
-  padding-top: 16px;
+  padding-top: 70px;
   line-height: 29px;
 }
 .plantOnATableDiv{
-  width: 45vw;
-  height: 20vw;
+  width: 568px;
+  height: 251px;
   padding-left: 62px;
   padding-top: 77px;
+  animation:opacity 8s infinite;
 }
 .fifthContainer{
-  background-color: rgb(243,244,246);
-  margin-left: 60px;
-  margin-right: 35px;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-top: 76px;
+  margin-bottom: 50px;
+  background: linear-gradient(-45deg,  rgb(243,244,246),  rgb(161, 212, 204),  rgb(102, 139, 134));
+	animation: fifthContainer 10s ease infinite;
+  background-size: 100% 100%;
 }
 .favourite{
   font-size: 40px;
@@ -265,58 +310,72 @@ font-style: normal;
   background-color:rgb(21, 105, 99);
   border: none;
   box-shadow: none;
-  height: 3.3vw;
-  width: 12vw;
+  height: auto;
+  width: auto;
+  padding: 8px 30px;
   margin-top: 30px;
 }
 .visitShop{
   color: rgb(250,254,254);
-  font-size: 1.157vw;
+  font-size: 15px;
+  width: 150px;
 }
 .favouriteDiv{
   margin-left: 95px;
   margin-top: 8px;
+  display: flex;
+  flex-direction: column;
 }
 .footer{
   display: grid;
-  margin: auto;
+  margin: 0 0 50px 40px;
   height: 20vw;
-  width:  73.5%;
-  padding-top: 140px;
+  width:  93.5%;
+  padding-top: 50px;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: repeat(1,1fr);
   column-gap:5.5vw;
+  border-top: 1px solid rgb(75, 135, 130);
 }
 .plantkuLogo{
-  font-size: 2vw;
+  font-size: 24px;
   font-weight: 500;
   color:rgb(21, 105, 99);
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 8px;
 }
 .plantkuHouse{
-  width:22.5vw;
+  width:200px;
+  font-size: 16px; 
+  font-weight:500;
+  padding-bottom: 15px;
+}
+.plantkuHouseText{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
 }
 .perusahaanDiv{
-  width:8vw;
-  line-height: 2.5vw;
+  width:120px;
+  line-height: 35px;
   padding-left: 10px;
 }
 .produk{
-  width:8vw;
-  line-height: 2.7vw;
+  width:120px;
+  line-height: 35px;
   padding-left: 7px;
 }
 .perusahaan{
-  font-size: 1.3vw;
+  font-size: 16px;
   font-weight:500;
   padding-bottom: 5px;
 }
 .tentag{
-  font-size: 1.08vw;
+  font-size: 14px;
   font-weight: 400;
 }
 .berlanggananDiv{
-  width: 17vw;
+  width: 200px;
   padding-left: 5px;
 }
 .berlanggananEmail{
@@ -326,7 +385,7 @@ font-style: normal;
 }
 .masukanEmail{
   padding:6px;
-  font-size: 1vw;
+  font-size: 13px;
   font-weight: 400;
   padding-left:17px;
   color: gray;
@@ -336,11 +395,1070 @@ font-style: normal;
   background-color:rgb(21, 105, 99);
   border: none;
   box-shadow: none;
-  height: 1.6vw;
-  width: 4vw;
+  height: auto;
+  width: auto;
   margin-top: 15px;
 }
 .submitText{
   color: white;
-  font-size: 0.7vw;
+  font-size: 10px;
+  padding: 6px 16px;
+}
+.burgermenu{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  display: none;
+  align-items:center;
+  justify-content:center ;
+  flex-direction: column;
+}
+.burgerSC{
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  justify-content:space-around;
+  padding-bottom: 30px;
+}
+.burgerImg{
+  width: 20px;
+  height: 20px;
+}
+.burgText{
+ background-color: rgb(229,229,229);
+ margin: 5px;
+ border-radius: 20px;
+ padding: 10px 0;
+ width: 217px;
+ border: none;
+  box-shadow: none;
+}
+.burgSign{
+ text-align: center;
+ width: 250px;
+ font-size: 14;
+ font-weight: bold;
+}
+.burger{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-around;
+  position: absolute;
+  width: 320px;
+  padding: 40px 0px;
+  margin-top: -1000px;
+  transition: margin-top 0.5s ease;
+  background-color: rgb(244,244,244);
+  z-index: 2;
+}
+.signUPbox:hover{
+  background-color: rgb(236, 236, 236);
+  transition: 0.2s;
+  transform:scale(1.1)
+}
+.signINbox:hover{
+  background-color: rgb(17, 87, 81);
+  transition: 0.2s;
+  transform:scale(1.1);
+}
+.cart:hover{
+  transition: 0.2s;
+  transform:scale(1.15);
+}
+.search:hover{
+  transition: 0.2s;
+  transform:scale(1.2);
+}
+.previousButton:hover{
+  background-color: rgb(236, 236, 236);
+  transition: 0.5s;
+}
+.rect:hover{
+  transition: 0.4s;
+  transform:scale(1.05);
+  box-shadow:0 0 10px 5px rgb(75, 135, 130)
+}
+.nextButton:hover, .visitButton:hover, .submit:hover{
+  background-color: rgb(17, 87, 81);
+  transition: 0.5s;
+}
+.kaktusImg:hover, .kecu2Img:hover{
+  transition: 0.4s;
+  transform:scale(1.1);
+}
+.plant5{
+  animation: slide 8s infinite;
+}
+.burgermenuImg{
+  display: none;
+  z-index: 20;
+}
+@keyframes slide{
+  0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translateX(40px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+@keyframes opacity{
+  0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes KembangFlowerMantap {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes KembangLorem {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.KembangFlowerMantap, .KembangLorem {
+  animation: KembangFlowerMantap 2s;
+}
+@keyframes fifthContainer {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+    body, html{
+      width: 768px;
+    }
+    .burgermenuImg{
+      width: 1px;
+      height: 1px;
+    }
+    .burgJS{
+      z-index: 2;
+
+    }
+    .rectangles{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,1fr);
+      width: 768px;
+      flex-wrap: wrap;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 50px;
+    }
+    .cottonbro{
+      width: 768px;
+      height: 740px;
+    }
+    .rowContainer1{
+      padding-top: 120px;
+    }
+    .colContainer{
+      margin: 0;
+    }
+    .firstContainer{
+      flex-direction: column;
+      width: 768px;
+    }
+    .colContainer{
+      width: 600px;
+    }
+    .f1{
+      margin-top: -823px;
+      width: 768px;
+    }
+    .Header{
+      padding-bottom: 250px;
+    }
+    .cart{
+      padding-right: 30px;
+    }
+    .signUPbox{
+      background-color: white;
+    }
+    .KembangFlowerMantap{
+      color:white;
+      padding-top: 50px;
+    }
+    .KembangLorem{
+      color:white;
+      width: 500px;
+      padding-left: 65px;
+    }
+    .rowContainer{
+      margin:0;
+    }
+    .PrevNextButtons{
+        margin-left: 170px;
+    }
+    .rectLorem{
+      font-size: 11px;
+    }
+    .rectangles{
+      width: 600px;
+      justify-items: center;
+      margin-left: 79px;
+    }
+    .rect{
+      width:257px;
+    }
+    .kaktusText{
+      padding-top: 18PX;
+    }
+    .thirdContainer{
+      width: 768px;
+    }
+    
+    .FeaturedCheaper{
+      width: 95%;
+        margin-left: 20px;
+    }
+    .kaktuses{
+      margin-bottom: 50px;
+    }
+    .rowContainerFeat>div{
+      margin-top: -150px;
+    }
+    .cheap{
+      margin-bottom: -150px;
+    }
+    .buyMore{
+      padding-left: 110px;
+      padding-right: 110px;
+      text-align: center;
+    }
+    .buyMoreLorem{
+      padding-left: 126px;
+      text-align: center;
+    }
+    .plantOnATableDiv{
+      padding-left: 100px;
+      padding-top: 30px;
+    }
+    .rowContainerFeat>.MontserratFont{
+      margin-top: 50px;
+    }
+    .plantsOnAWall{
+      visibility: hidden;
+    position: absolute;
+    left: 0;
+    }
+    .favourite{
+      width: 300px;
+      line-height: 50px;
+    }
+    .favouriteDiv{
+      width: 280px;
+      margin: 35px 0 0 50px;
+    }
+    .plant5{
+      width: 350px;
+      padding-top: 100px;
+    }
+    .visitButton{
+      margin-top: 20px;
+    }
+    .fifthContainer{
+      width: 700px;
+      height: 200px;
+      margin:  50px 0 50px 0;
+      padding-top: 110px;
+      margin-left: 30px;
+      height: auto;
+    }
+    .footer{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 0 0 0;
+      padding-top: 50px;
+      padding-bottom: 150px;
+      padding-left: 50px;
+      column-gap:100px;
+      width: 93.5%;
+      
+    }
+    .plantkuHouseDiv{
+      width: 350px;
+    }
+    .produk, .berlanggananDiv{
+      margin-top:40px
+    }
+    .logo{
+      margin-left: 0px;
+      margin-top: 80px;
+    }
+    .rowContainer1{
+      padding-top: 10px;
+    }
+    .KFM{
+      color:white;
+    }
+}
+@media screen and (max-width: 320px){
+  body, html{
+    width: 320px;
+  }
+  .search, .cart, .signINbox, .signUPbox{
+    display: none;
+  }
+  .firstContainer, .cottonbro, .cottonDiv, .PrevNextButtons,
+  .colContainer, .FeaturedCheaper, .kaktuses,
+  .buyMore, .buyMoreLorem, .rowContainerFeat, .cheap, .f1,
+  .thirdContainer, .MontserratFont, .plantOnATableDiv,
+  .fifthContainer, .plant5, .Header,.favouriteDiv, 
+  .plantkuHouseDiv, .footer, .perusahaanDiv, .produk,
+  .berlanggananDiv{
+    width: 100%
+  }
+  .plantOnATableDiv>img{
+    width: 320px;
+  }
+  .burgermenu{
+    display: flex;
+  }
+  .buyMore, .buyMoreLorem, .plantOnATableDiv, .KembangLorem,
+  .footer, .previousButton, div>.logo, .Header, .perusahaan {
+    padding: 0;
+  }
+  .PrevNextButtons, .KembangLorem{
+    margin: 0;
+  }
+  .FeaturedCheaper, .favouriteDiv, .fifthContainer{
+    margin: 0 ;
+  }
+  div>.rowContainer1{
+    width: 1px;
+    height: 1px;
+    margin: 0;padding: 0;
+  }
+  .kaktuses{
+    grid-template-columns: repeat(2,0.5fr);
+    grid-template-rows: (repeat(2,0.5fr));
+    width: 310px;
+    height: 470px;
+    margin: 0 0 0 10px;
+    column-gap:10px
+  }
+
+  .kaktuses > div{
+    width: 40%;
+    padding-bottom: 10px;
+    row-gap: 10px;
+    margin-left: 7px;
+    padding-top: 10px;
+  }
+  .plantsOnAWall{
+    width: 1px;
+    height: 1px;
+  }
+  .f1{
+    margin-top: -170px;
+  }
+  .plant5{
+    position: absolute;
+    left: 0;
+    height: 1px;
+    width: 1px;
+    visibility: hidden;
+  }
+  .kaktusImg{
+    width:130px;
+    height: 130px;
+  }
+  .kaktusText{
+    width: 130px;
+    padding: 0 0 0 10px;
+    margin-bottom: 40px;
+    line-height: 22px;
+  }
+  div>.kaktusImg{
+    width: 150px;
+    justify-content: space-around;
+  }
+  .kaktus, .rahasia{
+    font-size: 20px;
+    padding-top: 0;
+  }
+  .previousButton, .nextButton{
+    height: auto;
+    padding: 20px 10px;
+  }
+  .next{
+    margin-left: 0;
+    padding-left: 0px;
+  }
+  .previous{
+    margin-left: 8px;
+  }
+  .leftArrow{
+    padding-left: 4px;
+  }
+  .leftArrow, .rightArrow{
+    width: 20px;
+    height: 20px;
+  }
+  .previous, .next{
+    font-size: 20px;
+  }
+  .PrevNextButtons{
+    padding-top: 12px;
+  }
+  .logo{
+    width: 100%;
+    margin-top: -140px;
+    margin-bottom: 95px;
+  }
+  .KembangFlowerMantap{
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  .KembangLorem{
+    font-size: 12px;
+    line-height: 20px;
+    width: 90%;
+  }
+  .cottonbro{
+    height: 330px;
+  }
+  .logoImg{
+    width: 40px;
+    height: 40px;
+  }
+  .burgermenu{
+    visibility: visible;
+    padding-left: 260px;
+    right: 20px;
+    top: 20px;
+  }
+  .burgermenuImg{
+    width: 40px;
+    height: 40px;
+    display: flex;
+  }
+  .rect{
+    width: 250px;
+    padding-right: 16px;
+  }
+  .rectangles{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  .rectLorem{
+    font-size: 12px;
+  }
+  .featPlants{
+    font-size: 14px;
+  }
+  .downArrow{
+    padding-left: 10px;
+  }
+  .cheap{
+    width: 100px;
+  }
+  .FeaturedCheaper{
+   width: 90%;
+   margin-left: 18px;
+   margin-right: 0;
+   margin-top: -8px;
+  }
+  .thirdContainer{
+    margin-top: 20px;
+  }
+  .kecu{
+    font-weight: 400;margin-top: -8px;
+  }
+  .land{
+    font-weight: 400;padding-top: 0;
+  }
+  .buyMore{
+    font-size: 26px;
+    line-height: 32px;
+    margin-top: -55px;
+  }
+  .buyMoreLorem{
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 85%
+  }
+  .favourite{
+    font-size: 20px;
+    line-height: 25px;
+    padding-left: 20px;
+  }
+  .visitButton{
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .visitShop{
+    font-size: 8px;
+  }
+  .fifthContainer{
+    padding-top: 150px;
+    margin-bottom: 30px;
+  }
+  .favouriteDiv{
+    margin: 25px -15px 35px 0px;
+    width: 100%;
+  }
+  .plantkuLogo, .plantkuHouse, .plantkuHouseText{
+    padding-left: 20px;
+  }
+  .plantkuHouseText{
+    padding-right: 15px;
+  }
+  .perusahaanDiv, .produk{
+    padding-left: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+  }
+  .plantkuHouse{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .berlanggananDiv{
+    padding-left: 20px;
+    margin-top: 45px;
+    padding-bottom: 30px;
+  }
+  .berlanggananEmail{
+    padding-top: 10px;
+  }
+  .plantOnATableDiv{
+    height: 200px;
+  }
+    .plantkuLogo{
+      font-size: 26px;
+    }
+  .masukanEmail{
+    width: 215px;
+    padding-left: 10px;
+  }
+  .perusahaanDiv{
+    line-height: 22px;
+  }
+  .produk{
+    margin-top: 16px;
+    line-height: 18px;
+  }
+  .submit{
+    width: 50px;
+    height: 20px;
+  }
+  .submitText{
+    font-size: 8px;
+    padding: 0;
+  }
+  .KFM{
+    color:white;
+  }
+}
+.slide-from-top {
+  margin-top:-80px !important;
+}
+.burgJS{
+  background-color:transparent;
+  border:none;
+}
+.registr{
+  margin-top: 50px;
+  border:none;
+  border-radius:30px;
+  width: 100%;
+  height: 150px;
+  font-size: 3.5em;
+}
+.registration{
+  padding-bottom: 30px;
+  font-weight: bolder;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  
+}
+#formregistr{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#formregistr>b{
+  padding-bottom: 0;
+}
+#formregistr>p{
+  padding-bottom: 20px;
+  font-size: 1.3em;
+  width: 80%;
+  text-align: center;
+}
+.authRegDiv{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: -2000px;
+  transition: margin-left 0.5s ease;
+  
+}
+.authReg{
+width: 80%;
+  background-color:white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius:50px;
+  padding-bottom:50px;
+  padding-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.authorizationDiv{
+  position: absolute;
+  width: 500px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-left: 500px;
+  transition: margin-left 0.5s ease;
+  margin-top: 100px;
+}
+.authorization{
+  background-color:white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius:50px;
+  padding-bottom:50px;
+  margin-top: 150px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.formAuthoriz{
+display: flex;
+align-items:center;
+justify-content: center;
+flex-direction: column;
+}
+.authLab{
+display: flex;
+align-items:center;
+justify-content: center;
+flex-direction: column;
+}
+.authLab>label{
+font-size: 2.2em;
+}
+form>b{
+font-size: 3em;
+padding: 20px;
+}
+
+.formDiv2{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:90%;
+}
+.burgerDiv{
+  position: absolute;
+  margin-top: -1000px;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content:center ;
+  transition: margin-top 0.5s ease;
+}
+.regDiv{
+  position: absolute;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  background-color:white;
+  width: 100%;
+  border-radius:50px;
+  top:130px;
+  padding-top: 50px;
+  margin-left: -4000px;
+  transition: margin-left 0.5s ease;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.regDivBig{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.formreg{
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  width: 100%;
+}
+#agreeCheckbox {
+  width: 30px;
+  height: 30px;
+}
+.checkboxText{
+  font-size: 1.6em;
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  content: url("../sun.svg");
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(37,147,133);
+
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(37,147,133);
+}
+input:checked + .slider:before {
+  content: url("../moon.png");
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.change-lang{
+  width: 60px;
+  height: 30px;
+  font-weight: bold;
+  border-width: 2px;
+  border-radius:20px;
+  padding: 5px;
+  z-index: 0;
+}
+.authRegDiv{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: -2000px;
+  transition: margin-left 0.5s ease;
+  
+}
+.authReg{
+width: 80%;
+  background-color:white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius:50px;
+  padding-bottom:50px;
+  padding-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.authorizationDiv{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-left: -4000px;
+  transition: margin-left 0.5s ease;
+  margin-top: 5px
+}
+.authorization{
+  width: 100%;
+  background-color:white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius:50px;
+  padding-bottom:50px;
+  padding-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.formAuthoriz{
+display: flex;
+align-items:center;
+justify-content: center;
+flex-direction: column;
+}
+.authLab{
+display: flex;
+align-items:center;
+justify-content: center;
+flex-direction: column;
+}
+.authLab>label{
+font-size: 2.2em;
+}
+.authRegDiv{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: -2000px;
+  transition: margin-left 0.5s ease;
+  
+}
+.authReg{
+width: 80%;
+  background-color:white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius:50px;
+  padding-bottom:50px;
+  padding-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.slide-from-left {
+  margin-left:350px !important;
+}
+.exit3, .exit2{
+  border:none;
+  background-color:transparent;
+  color:red;
+  font-size: 2em;
+}
+.regId, .checkboxText, #auth,
+#label1, #label2{
+  font-size: 1.5em;
+}
+.checkboxText{
+  width: 80%;
+}
+input[type="text"],
+input[type="password"]{
+  width: 80%;
+  margin: 20px 0 20px 0;
+  font-size: 1.3em;
+  border-width:2px;
+  border-radius:15px;
+  padding: 0 10px 0 10px;
+}
+
+input[type="submit"] {
+  width: 30%;
+  font-size: 3em;
+  border:none;
+  border-radius:30px;
+  padding: 10px;
+}
+.overlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  overflow: hidden;
+}
+.bodyOverflow {
+  overflow-y: hidden;
+}
+.container {
+  max-width: 500px;
+ 
+}
+
+#slid1, #slid2{
+  width: 50px;
+  border:none;
+  border-radius:10px;
+  padding: 5px;
+  font-size: 1.3em;
+}
+.map{
+  width: 50%;
+  height: 400px;
+}
+.mapDiv{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.formAuthoriz{
+  font-size: 0.5em;
+}
+.KFM{
+text-decoration: none;
+color: rgb(21, 105, 99);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  transition: background-color 0.5s ease;
+}
+#user{
+  display: none;
+}
+.logOut1{
+  display: none;
+  border:none;
+  background-color:transparent;
+  font-size: 1.3em;
+  width: 100%;
+  justify-content: center;
+}
+.logOut{
+  display: none;
+  border:none;
+  background-color:transparent;
+  font-size: 1.3em;
+}
+
+/* плеер */
+.new-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 500px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.image-container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  max-width: 200px; /* Измените значение на желаемый размер */
+  height: auto;
+  object-fit: cover;
+}
+.image-container img {
+  max-width: 200px; /* Измените значение на желаемый размер */
+  height: auto;
+}
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.button-container button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.button-container button:hover {
+  transform: scale(1.1);
+}
+
+.button-container button img {
+  width: 24px;
+  height: 24px;
+}
+.music{
+  display: flex;
+justify-content: center;
+margin-bottom: 50px;
 }
