@@ -1,0 +1,22 @@
+body {
+    background-color: #e8f5e9; /* Зеленый фон */
+    font-family: Arial, sans-serif; /* Шрифт */
+    color: #1b5e20; /* Зеленый цвет текста */
+}
+
+#userInfo {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    background-color: #c8e6c9; /* Зеленый фон */
+    border: 1px solid #a5d6a7; /* Зеленый бордюр */
+    border-radius: 10px; /* Скругление углов */
+}
+
+#userInfo p {
+    font-size: 20px; /* Размер шрифта */
+    line-height: 1.5; /* Межстрочный интервал */
+}
+.backBut{
+    font-size: 2em;
+}

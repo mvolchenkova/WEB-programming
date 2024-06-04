@@ -43,7 +43,23 @@
         "authorization":"Authorization",
         "logOut":"Log Out",
         "regBut":"Create Account",
-        "genBut":"Generate"
+        "genBut":"Generate",
+        "reset":"Reset settings",
+        "flow":"Flower Shop Order Form",
+        "goback":"Go Back",
+        "select":"Select Product:",
+        "kaktuses":"Kaktuses",
+        "landaks":"Landaks",
+        "kecubung":"Kecubung",
+        "roses":"Roses",
+        "tulips":"Tulips",
+        "orch":"Orchids",
+        "sunfl":"Sunflowers",
+        "quant":"Quantity:",    
+        "yourName":"Your Name:",    
+        "addr":"Delivery Address:",    
+        "confirm":"Confirm Order",    
+        "cancel":"Cancel Order"
     },
     "ru":{
         "title": "Цветочный магазин",
@@ -89,6 +105,22 @@
         "generate":"Гененировать",
         "logOut":"Выйти",
         "regBut":"Создать аккаунт",
-        "genBut":"Гененировать"
+        "genBut":"Гененировать",
+        "reset":"Сбросить настройки",
+        "flow":"Форма заказа",
+        "goback":"Назад",
+        "select":"Выберите продукт:",
+        "kaktuses":"Кактус",
+        "landaks":"Ландак",
+        "kecubung":"Кекубунг",
+        "roses":"Роза",
+        "tulips":"Тюльпан",
+        "orch":"Орхидея",
+        "sunfl":"Подсохнух",
+        "quant":"Количество:",    
+        "yourName":"Ваше имя:",    
+        "addr":"Адрес доставки:",    
+        "confirm":"Подтвердить заказ",    
+        "cancel":"Отменить заказ"
     }
 }
