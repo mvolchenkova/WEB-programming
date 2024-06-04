@@ -59,8 +59,9 @@
         "yourName":"Your Name:",    
         "addr":"Delivery Address:",    
         "confirm":"Confirm Order",    
-        "cancel":"Cancel Order"
-    },
+        "cancel":"Cancel Order",
+        "terms":"terms of the user agreement"
+        },
     "ru":{
         "title": "Цветочный магазин",
         "auth":"Авторизация",
@@ -121,6 +122,7 @@
         "yourName":"Ваше имя:",    
         "addr":"Адрес доставки:",    
         "confirm":"Подтвердить заказ",    
-        "cancel":"Отменить заказ"
+        "cancel":"Отменить заказ",
+        "terms":"соглашением пользователя"
     }
 }

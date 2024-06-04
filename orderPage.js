@@ -1,44 +1,48 @@
-if(localStorage.getItem('isAuthenticated')==true){
-    
+// Создаем глобальный массив orders
+var orders = [];
+
+function confirmOrder() {
+    var product = document.getElementById('products').value;
+    var quantity = document.getElementById('quantity').value;
+    var name = document.getElementById('name').value;
+    var address = document.getElementById('address').value;
+
+    var summary = 'Product: ' + product +
+                  '\nQuantity: ' + quantity +
+                  '\nName: ' + name +
+                  '\nDelivery Address: ' + address;
+
+    var confirmed = window.confirm(summary + '\n\nConfirm order?');
+    if (confirmed) {
+        // Create order object
+        var order = {
+            product: product,
+            quantity: quantity,
+            name: name,
+            address: address
+        };
+
+        // Add new order to orders array
+        orders.push(order);
+
+        // Redirect to landing page
+        window.location = 'landing.html';
+    }
 }
-const languageselect = document.querySelector('.change-lang');
-const initialLang = 'ru';
-function loadLanguage(language) { 
-  let url = '/inter.json'; 
-  fetch(url) 
-    .then(response => response.json()) 
-    .then(data => { 
-      // Обновление текстовых значений элементов 
-      const elements = document.querySelectorAll('.data-lang'); 
-   
-      for (let element of elements) { 
-        const key = element.getAttribute('data-lang'); 
-        let translation = data[language][key]; 
-        localStorage.setItem(key,translation); 
-        element.innerHTML = translation; 
-      } 
-    }); 
-} 
-if (languageselect) {
-    languageselect.addEventListener('change', function() {
-      let select = languageselect.value;
-      loadLanguage(select);
-  
-      localStorage.setItem('translate', select);
-    });
-  }
-  
-  const isEnLanguage = localStorage.getItem('translate');
-  if (isEnLanguage === 'en') {
-    loadLanguage(isEnLanguage);
-    const EnOption = languageselect.querySelector('option[value="en"]');
-    if (EnOption) {
-      EnOption.selected = true;
+
+function cancelOrder() {
+    if (window.confirm('Are you sure you want to cancel the order?')) {
+        // Reset form fields
+        document.getElementById('products').selectedIndex = 0;
+        document.getElementById('quantity').value = '1';
+        document.getElementById('name').value = '';
+        document.getElementById('address').value = '';
     }
-  } else {
-    loadLanguage('ru');
-    const ruOption = languageselect.querySelector('option[value="ru"]');
-    if (ruOption) {
-      ruOption.selected = true;
-    }
-  }
+}
+
+// Make orders array globally accessible
+window.orders = orders;
+
+function goBack(){
+  window.location = 'landing.html'
+}

@@ -630,4 +630,11 @@ visit.addEventListener('click', function(){
     window.reload;
     authorizationDiv.style.marginLeft = '0';
 }
+});
+const goAdmin = document.querySelector('.goAdmin');
+if(localStorage.getItem('isAuthenticated')=='true'){
+  goAdmin.style.display = 'flex';
+}
+goAdmin.addEventListener('click', function(){
+  window.location = 'adminPanel.html'
 })
