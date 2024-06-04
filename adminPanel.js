@@ -89,31 +89,33 @@ function confirmOrder() {
 }
 
 function updateOrdersTable() {
-    // Get orders table from DOM
-    const table2 = document.getElementById('ordersTable');
+    // Get orders container from DOM
+    const container = document.getElementById('ordersContainer');
 
-    // Clear existing table rows
-    while (table2.rows.length > 1) {
-        table2.deleteRow(1);
+    // Clear existing cards
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
     }
 
     // Loop over each item in orders
     orders.forEach(item => {
-        // Create new row
-        const row = document.createElement('tr');
+        // Create new card
+        const card = document.createElement('div');
+        card.className = 'card';
 
-        // Add data to row
-        row.innerHTML = `
-            <td>${item.product}</td>
-            <td>${item.quantity}</td>
-            <td>${item.name}</td>
-            <td>${item.address}</td>
+        // Add data to card
+        card.innerHTML = `
+            <h3>Product: ${item.product}</h3>
+            <p>Quantity: ${item.quantity}</p>
+            <p>Name: ${item.name}</p>
+            <p>Address: ${item.address}</p>
         `;
 
-        // Append row to table
-        table2.appendChild(row);
+        // Append card to container
+        container.appendChild(card);
     });
 }
+
 
 function close(){
     window.location = 'landing.html'
