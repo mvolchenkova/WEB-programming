@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flower Shop Order Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <style>
+        body {
+            background-color: #d9f2d9; /* light green */
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #006600; /* dark green */
+        }
+        label, select, input, button {
+            display: block;
+            margin: 10px 0;
+        }
+        select, input {
+            padding: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #006600; /* dark green */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #004d00; /* darker green */
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            flex-direction: column;
+            width: 80%;
+            margin: auto;
+            background-color: #f0f5f0; /* very light green */
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+    <div style="display: flex; align-items:center; flex-direction: column;">
+        <h1 class=" data-lang" data-lang="flow">Flower Shop Order Form</h1>
+    <div style="display: flex; justify-content: center; align-items:center; flex-direction: column; width: 80%;">
+        <button onclick="goBack()" class=" data-lang" data-lang="goback">Go Back</button>
+        <label for="products" class=" data-lang" data-lang="select">Select Product:</label>
+    <select id="products">
+        <option class=" data-lang" data-lang="kaktuses">Kaktuses</option>
+        <option class=" data-lang" data-lang="landaks">Landaks</option>
+        <option data-lang="kecubung" class=" data-lang">Kecubung</option>
+        <option class=" data-lang" data-lang="rahasia">Rahasia</option>
+        <option data-lang="roses" class=" data-lang">Roses</option>
+        <option class=" data-lang" data-lang="tulips">Tulips</option>
+        <option data-lang="orch" class=" data-lang">Orchids</option>
+        <option data-lang="sunfl" class=" data-lang">Sunflowers</option>
+    </select>
+
+    <label for="quantity" class=" data-lang" data-lang="quant">Quantity:</label>
+    <input type="number" id="quantity" min="1" value="1">
+
+    <label for="name" class=" data-lang" data-lang="yourName">Your Name:</label>
+    <input type="text" id="name">
+
+    <label for="address" data-lang="addr" class=" data-lang">Delivery Address:</label>
+    <input type="text" id="address">
+
+    <button onclick="confirmOrder()" class=" data-lang" data-lang="confirm">Confirm Order</button>
+    <button onclick="cancelOrder()" data-lang="cancel" class=" data-lang">Cancel Order</button>
+
+    </div>
+    </div>
+    
+    <script src="orderPage.js"></script>
+</body>
+</html>

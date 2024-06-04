@@ -138,16 +138,7 @@ slid1.addEventListener('click', function() {
   }
 
   slid.style.transform = `translateX(-${currentItem * 242}px)`;
-});
-function updateBackgroundColor() {
-  const body = document.body;
-  body.style.transition = 'background-color 10s ease';
-  body.style.backgroundColor = 'rgb(120,203,180)';
-}
-window.addEventListener('scroll', function() {
-  updateBackgroundColor();
-});
-
+}); 
 
 
 //REGISTRATION
@@ -264,25 +255,28 @@ function removeErrorMessage(input) {
   let url = 'logins.json';
 
 registrateBut.addEventListener('click', function(){
+
   let pass1 = document.getElementById('pass1').value;
   let pass2 = document.getElementById('pass2').value;
   let surname = document.getElementById('surname').value;
-  let name = document.getElementById('name');
-  let date = document.getElementById('date');
+  let name = document.getElementById('name').value;
+  let date = document.getElementById('date').value;
   let username = document.getElementById('username').value;
+  let phone = document.getElementById('phone').value;
+  let email = document.getElementById('email').value;
   const validationMessage = validatePassword(pass1); 
+
   if(validationMessage){
     alert(validationMessage);
   }
-  let phone = document.getElementById('phone').value;
-  let email = document.getElementById('email').value;
+
   // Добавляем обработчик события, чтобы проверять состояние checkbox'а
   
   if(validateEmail(email)===true&&validatePassword(pass1)===null&&
   validatePhone(phone)===true&&matchPasswords(pass1, pass2)===true&&
   agreeCheck(agreeCheckbox)===true){
     localStorage.setItem('isAuthenticated', 'true');
-    localStorage.setItem('userName', username);
+    localStorage.setItem('username', username);
     localStorage.setItem('surname', surname);
     localStorage.setItem('name', name);
     localStorage.setItem('date', date);
@@ -292,7 +286,7 @@ registrateBut.addEventListener('click', function(){
 
     //запись в файл
     // Получаем данные из localStorage
-let username1 = localStorage.getItem('userName');
+let username1 = localStorage.getItem('username');
 let surname1 = localStorage.getItem('surname');
 let name1 = localStorage.getItem('name');
 let date1 = localStorage.getItem('date');
@@ -409,8 +403,12 @@ randombutton.addEventListener('click',function(){
 });
 const logOut = document.querySelector('.logOut');
 const logOut1 = document.querySelector('.logOut1');
-
+const userDiv = document.getElementById('user');
+const user1Div = document.getElementById('user1');
 if (JSON.parse(localStorage.getItem('isAuthenticated'))) {
+  userDiv.style.display = 'flex';
+  user1Div.style.display = 'flex';
+
   if (sigInBut) {
     sigInBut.style.display = 'none';
   }
@@ -549,3 +547,94 @@ next.addEventListener('click', () => {
   updateAudio();
   updateImage();
 });
+
+userDiv.addEventListener('click',function(){
+  window.location = 'userInfo.html';
+});
+user1Div.addEventListener('click',function(){
+  window.location = 'userInfo.html';
+});
+//DARKMODE
+const toggle = document.getElementById('checkbox');
+if (toggle) {
+  toggle.addEventListener('change', function() {
+    if (toggle.checked) {
+      enableDarkMode();
+    } else {
+      disableDarkMode();
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+});
+const rectName = document.querySelectorAll('.rectName');
+const rectLorem = document.querySelectorAll('.rectLorem');
+
+const kfm = document.querySelector('.KFM');
+function enableDarkMode() {
+  body.style.backgroundColor = 'rgb(0,100,100)';
+  logOut.style.color = 'white';
+  kfm.style.color = 'white';
+  rectName.forEach((element) => {
+    element.style.color = 'white';
+  });
+  rectLorem.forEach((element) => {
+    element.style.color = 'white';
+  });
+
+  localStorage.setItem('theme', 'dark');
+  toggle.checked = true;
+}
+
+function disableDarkMode() {
+  body.style.backgroundColor = '';
+  logOut.style.color = '';
+  kfm.style.color = '';
+  rectName.forEach((element) => {
+    element.style.color = '';
+  });
+  rectLorem.forEach((element) => {
+    element.style.color = '';
+  });
+  toggle.checked = false;
+  localStorage.setItem('theme', 'light');
+}
+let resetButton = document.querySelector('.resetButton');
+resetButton.addEventListener('click', function() {
+    
+    localStorage.setItem('translate', 'ru');
+    let lang1 = localStorage.getItem('translate');
+    loadLanguage(lang1);
+    const da = languageselect.querySelector('option[value="ru"]');
+  if (da) {
+    da.selected = true;
+  }
+  disableDarkMode();
+
+  toggle.checked = false;
+});
+const visit = document.querySelector('.visitShop');
+visit.addEventListener('click', function(){
+  if(localStorage.getItem('isAuthenticated')=='true'){
+    window.location = 'orderPage.html';
+  }
+  else {
+    window.scrollTo(0, 0); 
+    window.reload;
+    authorizationDiv.style.marginLeft = '0';
+}
+});
+const goAdmin = document.querySelector('.goAdmin');
+if(localStorage.getItem('isAuthenticated')=='true'){
+  goAdmin.style.display = 'flex';
+}
+goAdmin.addEventListener('click', function(){
+  window.location = 'adminPanel.html'
+})

@@ -16,7 +16,7 @@ overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: end;
-  margin-right: 50px;
+  margin-right: 40px;
   margin-top: -37px;
 }
 .rowContainer {
@@ -49,7 +49,7 @@ overflow-x: hidden;
 .search {
   width: 18px;
   height: 18px;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 .cart {
   width: 23px;
@@ -1376,9 +1376,6 @@ body {
   background-color: #f0f0f0;
   transition: background-color 0.5s ease;
 }
-#user{
-  display: none;
-}
 .logOut1{
   display: none;
   border:none;
@@ -1461,4 +1458,12 @@ body {
   display: flex;
 justify-content: center;
 margin-bottom: 50px;
+}
+#user, #user1{
+  padding-left: 5px;
+  display: none;
+}
+.goAdmin{
+  display: none;
+  justify-content: center;
 }
